@@ -183,6 +183,11 @@ $(document).ready(function () {
     })
     .setClassToggle("#para_professional", "bg_fill")
     .addTo(controller);
+  var scene27 = new ScrollMagic.Scene({
+      triggerElement: "#container3"
+    })
+    .setClassToggle("#read_more", "comeup")
+    .addTo(controller);
 });
 
 var symbols = ["*", "#", "%", "&", "?", "@"];
