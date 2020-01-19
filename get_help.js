@@ -40,6 +40,7 @@ function onclik() {
     }, 200);
   }
 }
+console.log("abhishek is super");
 
 // $("#btn1").click(function () {
 //   $("html,body").animate({
