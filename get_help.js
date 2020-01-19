@@ -41,33 +41,33 @@ function onclik() {
   }
 }
 
-$("#btn1").click(function () {
-  $("html,body").animate({
-      scrollTop: $("#book_now").offset().top
-    },
-    "slow"
-  );
-});
+// $("#btn1").click(function () {
+//   $("html,body").animate({
+//       scrollTop: $("#book_now").offset().top
+//     },
+//     "slow"
+//   );
+// });
 
-$("#btn2").click(function () {
-  $("html,body").animate({
-      scrollTop: $("#peer_support").offset().top
-    },
-    "slow"
-  );
-});
+// $("#btn2").click(function () {
+//   $("html,body").animate({
+//       scrollTop: $("#peer_support").offset().top
+//     },
+//     "slow"
+//   );
+// });
 
 $(document).ready(function () {
   var controller = new ScrollMagic.Controller();
   var scene0 = new ScrollMagic.Scene({
       triggerElement: "container1"
     })
-    .setClassToggle("#text1_1", "comeup")
+    .setClassToggle("#text1", "comeup")
     .addTo(controller);
   var scene1 = new ScrollMagic.Scene({
       triggerElement: "container1"
     })
-    .setClassToggle("#btn2", "comeup")
+    .setClassToggle("#text1_1", "comeup")
     .addTo(controller);
   var scene2 = new ScrollMagic.Scene({
       triggerElement: "container1"
@@ -77,62 +77,127 @@ $(document).ready(function () {
   var scene3 = new ScrollMagic.Scene({
       triggerElement: "container1"
     })
-    .setClassToggle("#text1", "comeup")
+    .setClassToggle("#text4", "comeup")
     .addTo(controller);
   var scene4 = new ScrollMagic.Scene({
       triggerElement: "container1"
     })
-    .setClassToggle("#text2", "comeup")
-    .addTo(controller);
-  var scene5 = new ScrollMagic.Scene({
-      triggerElement: "#book_now"
-    })
-    .setClassToggle("#btn3", "comeup")
-    .addTo(controller);
-  var scene6 = new ScrollMagic.Scene({
-      triggerElement: "#container1"
-    })
-    .setClassToggle("#text4", "comeup")
-    .addTo(controller);
-  var scene7 = new ScrollMagic.Scene({
-      triggerElement: "#container1"
-    })
     .setClassToggle("#text5", "comeup")
     .addTo(controller);
-  var scene8 = new ScrollMagic.Scene({
-      triggerElement: "#container1"
+  var scene5 = new ScrollMagic.Scene({
+      triggerElement: "container1"
     })
     .setClassToggle("#text6", "comeup")
     .addTo(controller);
-  var scene9 = new ScrollMagic.Scene({
-      triggerElement: "#peer_support"
-    })
-    .setClassToggle("#text3", "comeup")
-    .addTo(controller);
-  var scene8 = new ScrollMagic.Scene({
-      triggerElement: "#peer_support"
-    })
-    .setClassToggle("#text3_1", "comeup")
-    .addTo(controller);
-  var scene9 = new ScrollMagic.Scene({
-      triggerElement: "#peer_support"
-    })
-    .setClassToggle("#btn3_1", "comeup")
-    .addTo(controller);
-  var scene10 = new ScrollMagic.Scene({
-      triggerElement: "#container1"
+  var scene6 = new ScrollMagic.Scene({
+      triggerElement: "container1"
     })
     .setClassToggle("#c", "comeup")
     .addTo(controller);
-  var scene11 = new ScrollMagic.Scene({
-      triggerElement: "#container1"
+  var scene7 = new ScrollMagic.Scene({
+      triggerElement: "container1"
+    })
+    .setClassToggle("#u", "comeup")
+    .addTo(controller);
+  var scene8 = new ScrollMagic.Scene({
+      triggerElement: "container1"
     })
     .setClassToggle("#f", "comeup")
     .addTo(controller);
-  var scene12 = new ScrollMagic.Scene({
-      triggerElement: "#container1"
+  var scene9 = new ScrollMagic.Scene({
+      triggerElement: "container3"
     })
-    .setClassToggle("#u", "comeup")
+    .setClassToggle("#text3", "comeup")
+    .addTo(controller);
+  var scene10 = new ScrollMagic.Scene({
+      triggerElement: "container3"
+    })
+    .setClassToggle("#b1", "comeup")
+    .addTo(controller);
+  var scene11 = new ScrollMagic.Scene({
+      triggerElement: "container3"
+    })
+    .setClassToggle("#b2", "comeup")
+    .addTo(controller);
+  var scene12 = new ScrollMagic.Scene({
+      triggerElement: "container3"
+    })
+    .setClassToggle("#b3", "comeup")
+    .addTo(controller);
+  var scene13 = new ScrollMagic.Scene({
+      triggerElement: "container3"
+    })
+    .setClassToggle("#psycho_title", "comeup")
+    .addTo(controller);
+  var scene14 = new ScrollMagic.Scene({
+      triggerElement: "container3"
+    })
+    .setClassToggle("#slider", "comeup")
+    .addTo(controller);
+  var scene15 = new ScrollMagic.Scene({
+      triggerElement: "container3"
+    })
+    .setClassToggle("#story_title", "comeup")
+    .addTo(controller);
+  var scene16 = new ScrollMagic.Scene({
+      triggerElement: "container3"
+    })
+    .setClassToggle("#story_0", "comeup")
+    .addTo(controller);
+  var scene17 = new ScrollMagic.Scene({
+      triggerElement: "container3"
+    })
+    .setClassToggle("#story_name", "comeup")
+    .addTo(controller);
+  var scene18 = new ScrollMagic.Scene({
+      triggerElement: "container4"
+    })
+    .setClassToggle("#text2", "comeup")
+    .addTo(controller);
+  var scene19 = new ScrollMagic.Scene({
+      triggerElement: "container4"
+    })
+    .setClassToggle("#text2_0", "comeup")
+    .addTo(controller);
+  var scene20 = new ScrollMagic.Scene({
+      triggerElement: "container4"
+    })
+    .setClassToggle("#text2_1", "comeup")
+    .addTo(controller);
+  var scene21 = new ScrollMagic.Scene({
+      triggerElement: "container4"
+    })
+    .setClassToggle("#i", "comeup")
+    .addTo(controller);
+  var scene21 = new ScrollMagic.Scene({
+      triggerElement: "container4"
+    })
+    .setClassToggle("#text2_2", "comeup")
+    .addTo(controller);
+  var scene22 = new ScrollMagic.Scene({
+      triggerElement: "container4"
+    })
+    .setClassToggle("#e", "comeup")
+    .addTo(controller);
+  var scene23 = new ScrollMagic.Scene({
+      triggerElement: "container4"
+    })
+    .setClassToggle("#text2_3", "comeup")
+    .addTo(controller);
+  var scene24 = new ScrollMagic.Scene({
+      triggerElement: "container4"
+    })
+    .setClassToggle("#a", "comeup")
+    .addTo(controller);
+  var scene25 = new ScrollMagic.Scene({
+      triggerElement: "container4"
+    })
+    .setClassToggle("#btn2", "comeup")
+    .addTo(controller);
+  var scene26 = new ScrollMagic.Scene({
+      triggerElement: "container4"
+    })
+    .setClassToggle("#para_professional", "bg_fill")
     .addTo(controller);
 });
 
@@ -192,7 +257,60 @@ function whole_f() {
     }
   }
 }
+setInterval(whole_i, speed);
 
+function whole_i() {
+  var i = 0;
+  var timer_i = setInterval(type_i, 90);
+
+  function type_i() {
+    if (i < 5) {
+      var sym = symbols[Math.floor(Math.random() * 6)];
+      document.getElementById("i").textContent = sym;
+      i++;
+    } else {
+      clearInterval(timer_i);
+      timer_i = null;
+      document.getElementById("i").textContent = "I";
+    }
+  }
+}
+setInterval(whole_e, speed);
+
+function whole_e() {
+  var i = 0;
+  var timer_e = setInterval(type_e, 90);
+
+  function type_e() {
+    if (i < 5) {
+      var sym = symbols[Math.floor(Math.random() * 6)];
+      document.getElementById("e").textContent = sym;
+      i++;
+    } else {
+      clearInterval(timer_e);
+      timer_e = null;
+      document.getElementById("e").textContent = "E";
+    }
+  }
+}
+setInterval(whole_a, speed);
+
+function whole_a() {
+  var i = 0;
+  var timer_a = setInterval(type_a, 90);
+
+  function type_a() {
+    if (i < 5) {
+      var sym = symbols[Math.floor(Math.random() * 6)];
+      document.getElementById("a").textContent = sym;
+      i++;
+    } else {
+      clearInterval(timer_a);
+      timer_a = null;
+      document.getElementById("a").textContent = "A";
+    }
+  }
+}
 // var slideIndex = 1;
 // showSlides(slideIndex);
 
