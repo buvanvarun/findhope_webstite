@@ -40,163 +40,146 @@ function onclik() {
     }, 200);
   }
 }
-console.log("abhishek is super");
-
-// $("#btn1").click(function () {
-//   $("html,body").animate({
-//       scrollTop: $("#book_now").offset().top
-//     },
-//     "slow"
-//   );
-// });
-
-// $("#btn2").click(function () {
-//   $("html,body").animate({
-//       scrollTop: $("#peer_support").offset().top
-//     },
-//     "slow"
-//   );
-// });
 
 $(document).ready(function () {
   var controller = new ScrollMagic.Controller();
   var scene0 = new ScrollMagic.Scene({
-      triggerElement: "container1"
+      triggerElement: "#container1"
     })
     .setClassToggle("#text1", "comeup")
     .addTo(controller);
   var scene1 = new ScrollMagic.Scene({
-      triggerElement: "container1"
+      triggerElement: "#container1"
     })
     .setClassToggle("#text1_1", "comeup")
     .addTo(controller);
   var scene2 = new ScrollMagic.Scene({
-      triggerElement: "container1"
+      triggerElement: "#container1"
     })
     .setClassToggle("#btn1", "comeup")
     .addTo(controller);
   var scene3 = new ScrollMagic.Scene({
-      triggerElement: "container1"
+      triggerElement: "#container1"
     })
     .setClassToggle("#text4", "comeup")
     .addTo(controller);
   var scene4 = new ScrollMagic.Scene({
-      triggerElement: "container1"
+      triggerElement: "#container1"
     })
     .setClassToggle("#text5", "comeup")
     .addTo(controller);
   var scene5 = new ScrollMagic.Scene({
-      triggerElement: "container1"
+      triggerElement: "#container1"
     })
     .setClassToggle("#text6", "comeup")
     .addTo(controller);
   var scene6 = new ScrollMagic.Scene({
-      triggerElement: "container1"
+      triggerElement: "#container1"
     })
     .setClassToggle("#c", "comeup")
     .addTo(controller);
   var scene7 = new ScrollMagic.Scene({
-      triggerElement: "container1"
+      triggerElement: "#container1"
     })
     .setClassToggle("#u", "comeup")
     .addTo(controller);
   var scene8 = new ScrollMagic.Scene({
-      triggerElement: "container1"
+      triggerElement: "#container1"
     })
     .setClassToggle("#f", "comeup")
     .addTo(controller);
   var scene9 = new ScrollMagic.Scene({
-      triggerElement: "container3"
+      triggerElement: "#container3"
     })
     .setClassToggle("#text3", "comeup")
     .addTo(controller);
   var scene10 = new ScrollMagic.Scene({
-      triggerElement: "container3"
+      triggerElement: "#container3"
     })
     .setClassToggle("#b1", "comeup")
     .addTo(controller);
   var scene11 = new ScrollMagic.Scene({
-      triggerElement: "container3"
+      triggerElement: "#container3"
     })
     .setClassToggle("#b2", "comeup")
     .addTo(controller);
   var scene12 = new ScrollMagic.Scene({
-      triggerElement: "container3"
+      triggerElement: "#container3"
     })
     .setClassToggle("#b3", "comeup")
     .addTo(controller);
   var scene13 = new ScrollMagic.Scene({
-      triggerElement: "container3"
+      triggerElement: "#container3"
     })
     .setClassToggle("#psycho_title", "comeup")
     .addTo(controller);
   var scene14 = new ScrollMagic.Scene({
-      triggerElement: "container3"
+      triggerElement: "#container3"
     })
     .setClassToggle("#slider", "comeup")
     .addTo(controller);
   var scene15 = new ScrollMagic.Scene({
-      triggerElement: "container3"
+      triggerElement: "#container3"
     })
     .setClassToggle("#story_title", "comeup")
     .addTo(controller);
   var scene16 = new ScrollMagic.Scene({
-      triggerElement: "container3"
+      triggerElement: "#container3"
     })
     .setClassToggle("#story_0", "comeup")
     .addTo(controller);
   var scene17 = new ScrollMagic.Scene({
-      triggerElement: "container3"
+      triggerElement: "#container3"
     })
     .setClassToggle("#story_name", "comeup")
     .addTo(controller);
   var scene18 = new ScrollMagic.Scene({
-      triggerElement: "container4"
+      triggerElement: "#container4"
     })
     .setClassToggle("#text2", "comeup")
     .addTo(controller);
   var scene19 = new ScrollMagic.Scene({
-      triggerElement: "container4"
+      triggerElement: "#container4"
     })
     .setClassToggle("#text2_0", "comeup")
     .addTo(controller);
   var scene20 = new ScrollMagic.Scene({
-      triggerElement: "container4"
+      triggerElement: "#container4"
     })
     .setClassToggle("#text2_1", "comeup")
     .addTo(controller);
   var scene21 = new ScrollMagic.Scene({
-      triggerElement: "container4"
+      triggerElement: "#container4"
     })
     .setClassToggle("#i", "comeup")
     .addTo(controller);
   var scene21 = new ScrollMagic.Scene({
-      triggerElement: "container4"
+      triggerElement: "#container4"
     })
     .setClassToggle("#text2_2", "comeup")
     .addTo(controller);
   var scene22 = new ScrollMagic.Scene({
-      triggerElement: "container4"
+      triggerElement: "#container4"
     })
     .setClassToggle("#e", "comeup")
     .addTo(controller);
   var scene23 = new ScrollMagic.Scene({
-      triggerElement: "container4"
+      triggerElement: "#container4"
     })
     .setClassToggle("#text2_3", "comeup")
     .addTo(controller);
   var scene24 = new ScrollMagic.Scene({
-      triggerElement: "container4"
+      triggerElement: "#container4"
     })
     .setClassToggle("#a", "comeup")
     .addTo(controller);
   var scene25 = new ScrollMagic.Scene({
-      triggerElement: "container4"
+      triggerElement: "#container4"
     })
     .setClassToggle("#btn2", "comeup")
     .addTo(controller);
   var scene26 = new ScrollMagic.Scene({
-      triggerElement: "container4"
+      triggerElement: "#container4"
     })
     .setClassToggle("#para_professional", "bg_fill")
     .addTo(controller);
@@ -312,28 +295,3 @@ function whole_a() {
     }
   }
 }
-// var slideIndex = 1;
-// showSlides(slideIndex);
-
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
-
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
-
-// function showSlides(n) {
-//   var z;
-//   var slides = document.getElementsByClassName("container3_2");
-//   if (n > slides.length) {
-//     slideIndex = 1
-//   }
-//   if (n < 1) {
-//     slideIndex = slides.length
-//   }
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   slides[slideIndex - 1].style.display = "block";
-// }
