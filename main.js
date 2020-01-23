@@ -33,7 +33,7 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 }
-var txt2 = "Awareness + Stigma";
+var txt2 = "Stories + Self help";
 var j = 0;
 
 function addSymbols2() {
@@ -49,7 +49,7 @@ function typeWriter2() {
   var symbols = ["*", "-", "$", "%", "?", "@"];
   if (j < txt2.length) {
     var sym = symbols[Math.floor(Math.random() * 5)];
-    if (txt2.charAt(j) == "g" || txt2.charAt(j) == "+") {
+    if (txt2.charAt(j) == "h" || txt2.charAt(j) == "+") {
       document.getElementById("title2").innerHTML +=
         '<span style="color: #a0c0ff;">' + txt2.charAt(j) + "</span>" + sym;
     } else {
@@ -247,7 +247,7 @@ function onclik() {
 }
 
 function myFunction() {
-  myVar = setTimeout(showPage, 3000);
+  myVar = setTimeout(showPage, 300);
 }
 
 function showPage() {

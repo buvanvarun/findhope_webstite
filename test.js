@@ -1,26 +1,3 @@
-$(document).ready(function () {
-    var controller = new ScrollMagic.Controller();
-    var scene1 = new ScrollMagic.Scene({
-            triggerElement: "#t1"
-        })
-        .setClassToggle("#content_box1", "content_box_ani")
-        .addTo(controller);
-    var scene2 = new ScrollMagic.Scene({
-            triggerElement: "#t1"
-        })
-        .setClassToggle("#content_box2", "content_box_ani")
-        .addTo(controller);
-    var scene3 = new ScrollMagic.Scene({
-            triggerElement: "#t1"
-        })
-        .setClassToggle("#content_box3", "content_box_ani")
-        .addTo(controller);
-});
-
-function openMenu() {
-    document.getElementById("menuButton").classList.add("menu__btn1");
-}
-
 function onclik() {
     if (document.getElementById("menu").style.visibility == "hidden") {
         document.getElementById("menu1").style.top = "-120vw";
@@ -40,7 +17,7 @@ function onclik() {
         }, 200);
     }
 }
-var txt3 = "Stories , Symptoms & Tips";
+var txt3 = "Depression doesn't mean sadness";
 var k = 0;
 var speed = 50;
 
@@ -57,7 +34,7 @@ function typeWriter3() {
     var symbols = ["*", "-", "$", "%", "?", "@"];
     if (k < txt3.length) {
         var sym = symbols[Math.floor(Math.random() * 5)];
-        if (txt3.charAt(k) == "&" || (txt3.charAt(k) == "t" && k > 3)) {
+        if (txt3.charAt(k) == "m" || (txt3.charAt(k) == "i" && k > 3)) {
             document.getElementById("title3").innerHTML +=
                 '<span style="color: #eb4034;">' + txt3.charAt(k) + "</span>" + sym;
         } else {
@@ -75,3 +52,15 @@ function typeWriter3() {
         setTimeout(typeWriter3, speed);
     }
 }
+
+
+$(document).ready(function () {
+    var controller = new ScrollMagic.Controller();
+    var scene1 = new ScrollMagic.Scene({
+            triggerElement: '#t1'
+        })
+        .on("start", function () {
+            typeWriter3();
+        })
+        .addTo(controller);
+});
