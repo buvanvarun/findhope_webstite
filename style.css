@@ -585,6 +585,27 @@ a {
     padding-bottom: 60px;
     width: 100%;
   }
+
+  .button15 {
+    font-size: 40px;
+    border: none;
+    width: 280px;
+    height: 75px;
+    background-color: rgba(16, 219, 147, 0.9);
+    color: white;
+    border-radius: 4px;
+    margin-top: 15px;
+  }
+
+  .heart {
+    width: 50px;
+  }
+
+  .mess {
+    margin-left: 100px;
+    font-size: 45px;
+    font-family: 'VT323', monospace;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1077,4 +1098,13 @@ a {
     margin-top: 15px;
   }
 
+  .heart {
+    width: 50px;
+  }
+
+  .mess {
+    margin-left: 20px;
+    font-size: 25px;
+    font-family: 'VT323', monospace;
+  }
 }

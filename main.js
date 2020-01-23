@@ -247,7 +247,7 @@ function onclik() {
 }
 
 function myFunction() {
-  myVar = setTimeout(showPage, 300);
+  myVar = setTimeout(showPage, 1500);
 }
 
 function showPage() {

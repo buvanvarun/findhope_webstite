@@ -36,7 +36,7 @@ function typeWriter3() {
         var sym = symbols[Math.floor(Math.random() * 5)];
         if (txt3.charAt(k) == "m" || (txt3.charAt(k) == "i" && k > 3)) {
             document.getElementById("title3").innerHTML +=
-                '<span style="color: #eb4034;">' + txt3.charAt(k) + "</span>" + sym;
+                '<span style="color: #70db70;">' + txt3.charAt(k) + "</span>" + sym;
         } else {
             document.getElementById("title3").innerHTML += txt3.charAt(k) + sym;
         }
@@ -45,7 +45,7 @@ function typeWriter3() {
             .getElementById("title3")
             .innerHTML.replace(
                 sym,
-                '<span style="color: #eb4034;">' + sym + "</span>"
+                '<span style="color: #70db70;">' + sym + "</span>"
             );
         k++;
         setTimeout(addSymbols3, speed);
@@ -62,5 +62,20 @@ $(document).ready(function () {
         .on("start", function () {
             typeWriter3();
         })
+        .addTo(controller);
+    var scene2 = new ScrollMagic.Scene({
+            triggerElement: '#t1'
+        })
+        .setClassToggle('#text1', 'ani')
+        .addTo(controller);
+    var scene3 = new ScrollMagic.Scene({
+            triggerElement: '#t1'
+        })
+        .setClassToggle('#text2', 'ani')
+        .addTo(controller);
+    var scene4 = new ScrollMagic.Scene({
+            triggerElement: '#t1'
+        })
+        .setClassToggle('#button1', 'but_ani')
         .addTo(controller);
 });
