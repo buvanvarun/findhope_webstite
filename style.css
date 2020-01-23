@@ -1110,7 +1110,7 @@ a {
   }
 
   .mess {
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'VT323', monospace;
     margin-top: 15px;
   }
@@ -1118,7 +1118,7 @@ a {
 
 
   .message {
-    width: 55vw;
+    width: 65vw;
     margin-left: 20px;
     display: flex;
     flex-direction: row;
