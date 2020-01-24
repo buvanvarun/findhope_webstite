@@ -1124,4 +1124,9 @@ a {
     flex-direction: row;
     justify-content: space-evenly;
   }
+
+  .button_container {
+    display: flex;
+    flex-direction: column;
+  }
 }
