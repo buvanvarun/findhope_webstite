@@ -14,13 +14,19 @@
   var depressionCount = 0;
 
   displayQuestions();
+  var width = (screen.availWidth / 9);
+  var barwidth = 0;
 
   function displayQuestions() {
     if (ch < 9) {
       document.getElementById("q").innerHTML =
         `<span class="anim">` + questions[ch] + `</span>`;
+      barwidth += width;
+      document.getElementById('progressbar').style.width = barwidth.toString() + 'px';
       ch++;
     } else {
+      barwidth += width;
+      document.getElementById('progressbar').style.width = barwidth.toString() + 'px';
       displayResult(depressionCount);
     }
   }

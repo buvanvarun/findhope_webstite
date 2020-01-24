@@ -1023,7 +1023,7 @@ a {
   .image_div {
     margin-top: 5vh;
     margin-left: 3vh;
-    width: 30vw;
+    width: 20vw;
   }
 
   .social {
@@ -1043,7 +1043,7 @@ a {
 
   .soc_title {
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 30px;
     margin-bottom: 20px;
     color: rgb(178, 204, 255);
@@ -1053,6 +1053,7 @@ a {
     margin-left: 20px;
     position: relative;
     z-index: 99;
+    font-size: 18px;
   }
 
   #sec5 {
@@ -1066,12 +1067,14 @@ a {
     margin-top: 20px;
     margin-left: 30px;
     letter-spacing: 1.5px;
+    font-size: 18px;
   }
 
   .contact {
     margin-top: 50px;
     font-size: 30px;
     margin-left: 30px;
+    font-size: 27px;
   }
 
   .back {
@@ -1106,20 +1109,21 @@ a {
   }
 
   .heart {
-    width: 40px;
+    width: 20px;
   }
 
   .mess {
-    font-size: 30px;
+    font-size: 18px;
     font-family: 'VT323', monospace;
-    margin-top: 2px;
+    /* margin-top: 2px; */
   }
 
 
 
   .message {
-    width: 85vw;
+    width: 50vw;
     margin-left: 20px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
