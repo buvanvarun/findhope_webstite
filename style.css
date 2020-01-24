@@ -607,7 +607,7 @@ a {
   }
 
   .message {
-    width: 20vw;
+    width: 25vw;
     margin-left: 100px;
     display: flex;
     flex-direction: row;
@@ -1106,19 +1106,19 @@ a {
   }
 
   .heart {
-    width: 50px;
+    width: 40px;
   }
 
   .mess {
     font-size: 30px;
     font-family: 'VT323', monospace;
-    margin-top: 15px;
+    margin-top: 2px;
   }
 
 
 
   .message {
-    width: 65vw;
+    width: 85vw;
     margin-left: 20px;
     display: flex;
     flex-direction: row;
