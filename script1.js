@@ -70,6 +70,9 @@ function displayResult(s) {
     str = "severe depression";
   }
   document.getElementById("r").innerHTML = "Result:\n" + str;
+  document.getElementById("percent").innerHTML = Math.ceil((s / 27) * 100).toString() + '%';
+  document.getElementById("circle2")
+    .style.strokeDashoffset = (660 * (s / 27)).toString();
   console.log(s);
 }
 
