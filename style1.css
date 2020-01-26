@@ -225,7 +225,7 @@ svg circle:nth-child(2) {
 .text {
   position: absolute;
   font-size: 38px;
-  top: 56%;
+  top: 50%;
   left: 52%;
   transform: translate(-50%, -50%);
 }
