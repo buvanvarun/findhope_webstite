@@ -224,7 +224,16 @@ svg circle:nth-child(2) {
 
 .text {
   position: absolute;
-  top: 170px;
-  left: 160px;
   font-size: 38px;
+  top: 59%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+}
+
+.line {
+  border-color: black;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-width: 1.5px;
+  margin-top: 40px;
 }
