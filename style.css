@@ -607,7 +607,7 @@ a {
   }
 
   .message {
-    width: 25vw;
+    width: 30vw;
     margin-left: 100px;
     display: flex;
     flex-direction: row;

@@ -120,7 +120,7 @@ a {
     }
 
     .container_box {
-        margin-top: 20vh;
+        margin-top: 70px;
         display: grid;
         grid-template-columns: auto auto auto;
         margin-left: 5vh;
@@ -224,20 +224,22 @@ a {
         padding-top: 10px;
     }
 
+    .button_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
     #youth_advocate_register_button {
-        margin-top: 50px;
-        border: none;
-        background-color: transparent;
-        font-style: italic;
-        text-decoration: underline;
-        color: blue;
+        margin-top: 35px;
+        background-color: #16db93;
+        align-self: center;
+        width: 240px;
         font-size: 40px;
         padding: 10px;
-        border-radius: 4px;
-        align-self: center;
-        position: absolute;
-        left: 48%;
-        margin-bottom: 50px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 30px;
     }
 
     #India {
@@ -276,7 +278,7 @@ a {
 
 @media screen and (max-width:600px) {
     .container_box {
-        margin-top: 20vh;
+        margin-top: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -379,19 +381,21 @@ a {
         padding-top: 10px;
     }
 
+    .button_container {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
     #youth_advocate_register_button {
         margin-top: 35px;
-        border: none;
-        background-color: transparent;
-        font-style: italic;
-        text-decoration: underline;
-        color: blue;
-        font-size: 25px;
-        padding: 10px;
-        border-radius: 4px;
+        background-color: #16db93;
         align-self: center;
-        position: absolute;
-        left: 40%;
+        width: 120px;
+        font-size: 20px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
         margin-bottom: 30px;
     }
 
