@@ -879,6 +879,7 @@ a {
     padding-right: 15px;
     width: 240px;
     height: 65px;
+    cursor: pointer;
     transition: all 0.5s linear 0.5s;
     transform: translateY(100px);
     opacity: 0;
@@ -1414,6 +1415,7 @@ a {
     font-size: 30px;
     width: 240px;
     height: 65px;
+    cursor: pointer;
     transition: all 0.5s linear 1.3s;
     transform: translateY(100px);
     opacity: 0;
