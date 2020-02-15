@@ -65,11 +65,11 @@
 }
 
 .bg_layer2 {
-  background-color: #70DB70;
+  background-color: #70db70;
 }
 
 .bg_layer3 {
-  background-color: #70DB70;
+  background-color: #70db70;
   opacity: 0.5;
 }
 
@@ -338,7 +338,7 @@ a {
     list-style-type: none;
     font-size: 19px;
     margin-bottom: 3px;
-    transition: all 0.5s linear .3s;
+    transition: all 0.5s linear 0.3s;
     transform: translateY(100px);
     opacity: 0;
   }
@@ -349,7 +349,7 @@ a {
     list-style-type: none;
     font-size: 19px;
     margin-bottom: 3px;
-    transition: all 0.5s linear .5s;
+    transition: all 0.5s linear 0.5s;
     transform: translateY(100px);
     opacity: 0;
   }
@@ -360,7 +360,7 @@ a {
     list-style-type: none;
     font-size: 19px;
     margin-bottom: 3px;
-    transition: all 0.5s linear .7s;
+    transition: all 0.5s linear 0.7s;
     transform: translateY(100px);
     opacity: 0;
   }
@@ -425,7 +425,7 @@ a {
     position: relative;
     box-shadow: 2px 2px 2px 2px #eaecef;
     margin-left: 10px;
-    background-color: rgba(0, 121, 145, .6);
+    background-color: rgba(0, 121, 145, 0.6);
     margin-top: 40px;
     width: 90vw;
     justify-content: space-around;
@@ -462,7 +462,7 @@ a {
     position: relative;
     box-shadow: 2px 2px 2px 2px #eaecef;
     margin-left: 10px;
-    background-color: rgba(0, 121, 145, .6);
+    background-color: rgba(0, 121, 145, 0.6);
     margin-top: 40px;
     width: 90vw;
     justify-content: space-around;
@@ -474,7 +474,6 @@ a {
     position: absolute;
     font-size: 18px;
     left: 90px;
-
   }
 
   .psycho_attribute_0 {
@@ -569,12 +568,12 @@ a {
   }
 
   .para_professional {
-    transition: all .5s linear 1.5s;
+    transition: all 0.5s linear 1.5s;
     background-color: none;
   }
 
   .bg_fill {
-    background-color: rgba(0, 121, 145, .4);
+    background-color: rgba(0, 121, 145, 0.4);
   }
 
   .green {
@@ -708,8 +707,6 @@ a {
     opacity: 0;
   }
 
-
-
   #sec5 {
     height: 150%;
     background-color: #64687d;
@@ -805,23 +802,24 @@ a {
 }
 
 @media only screen and (min-width: 580px) {
+  .menu__btn {
+    float: left;
+    background: none;
+    border: none;
+    padding: 1em .5em;
+  }
+
   .txt0 {
     position: absolute;
     margin-top: 80px;
     margin-left: 30px;
-    font-size: 35px;
+    font-size: 55px;
   }
+
 
   .text {
-    margin-left: 10vw;
+    margin-left: 65%;
     font-size: 50px;
-  }
-
-  .container1 {
-    font-size: 30px;
-    height: 60vh;
-    z-index: -1;
-    width: 100%;
   }
 
   .container00 {
@@ -833,6 +831,13 @@ a {
         #ccd9ff,
         #b4ceff);
     z-index: 0;
+  }
+
+  .container1 {
+    font-size: 30px;
+    height: 100vh;
+    z-index: -1;
+    width: 100%;
   }
 
   .text1 {
@@ -857,12 +862,12 @@ a {
     transition: all 0.5s linear 0.3s;
     transform: translateY(100px);
     opacity: 0;
-    width: 70vw;
+    width: 70%;
   }
 
   .btn1 {
     position: absolute;
-    margin-top: 450px;
+    margin-top: 550px;
     margin-left: 10vw;
     border: none;
     border-radius: 6px;
@@ -874,6 +879,7 @@ a {
     padding-right: 15px;
     width: 240px;
     height: 65px;
+    cursor: pointer;
     transition: all 0.5s linear 0.5s;
     transform: translateY(100px);
     opacity: 0;
@@ -881,7 +887,7 @@ a {
 
   .container2 {
     font-size: 30px;
-    height: 50vh;
+    height: 100vh;
     z-index: 1;
     background: white;
     margin-top: 30px;
@@ -896,7 +902,7 @@ a {
     display: flex;
     flex-direction: row;
     height: 30vh;
-    width: 80vw;
+    width: 80%;
   }
 
   .text4 {
@@ -969,7 +975,7 @@ a {
     display: flex;
     flex-direction: row;
     height: 30vh;
-    width: 100vw;
+    width: 100%;
   }
 
   .text6 {
@@ -998,7 +1004,7 @@ a {
 
   .container3 {
     position: relative;
-    top: 33vh;
+    top: 80vh;
     height: 100vh;
   }
 
@@ -1030,7 +1036,7 @@ a {
     list-style-type: none;
     font-size: 39px;
     margin-bottom: 7px;
-    transition: all 0.5s linear .3s;
+    transition: all 0.5s linear 0.3s;
     transform: translateY(100px);
     opacity: 0;
   }
@@ -1041,7 +1047,7 @@ a {
     list-style-type: none;
     font-size: 39px;
     margin-bottom: 7px;
-    transition: all 0.5s linear .5s;
+    transition: all 0.5s linear 0.5s;
     transform: translateY(100px);
     opacity: 0;
   }
@@ -1052,7 +1058,7 @@ a {
     list-style-type: none;
     font-size: 39px;
     margin-bottom: 3px;
-    transition: all 0.5s linear .7s;
+    transition: all 0.5s linear 0.7s;
     transform: translateY(100px);
     opacity: 0;
   }
@@ -1122,7 +1128,7 @@ a {
     position: relative;
     box-shadow: 2px 2px 2px 2px #eaecef;
     margin-left: 10px;
-    background-color: rgba(0, 121, 145, .6);
+    background-color: rgba(0, 121, 145, 0.6);
     margin-top: 40px;
     width: 40vw;
     height: 250px;
@@ -1161,7 +1167,7 @@ a {
     position: relative;
     box-shadow: 2px 2px 2px 2px #eaecef;
     margin-left: 10px;
-    background-color: rgba(0, 121, 145, .6);
+    background-color: rgba(0, 121, 145, 0.6);
     margin-top: 40px;
     width: 40vw;
     justify-content: space-around;
@@ -1173,7 +1179,6 @@ a {
     position: absolute;
     font-size: 28px;
     left: 90px;
-
   }
 
   .psycho_attribute_0 {
@@ -1251,7 +1256,7 @@ a {
     align-content: center;
     font-size: 30px;
     height: 100vh;
-    margin-top: 450px;
+    margin-top: 110vh;
   }
 
   .text2 {
@@ -1276,12 +1281,12 @@ a {
   }
 
   .para_professional {
-    transition: all .5s linear 1.5s;
+    transition: all 0.5s linear 1.5s;
     background-color: none;
   }
 
   .bg_fill {
-    background-color: rgba(0, 121, 145, .4);
+    background-color: rgba(0, 121, 145, 0.4);
   }
 
   .green {
@@ -1386,7 +1391,7 @@ a {
   .a {
     position: relative;
     font-size: 120px;
-    margin-left: 8vw;
+    margin-left: 29vw;
     top: 250px;
     width: 40vw;
     color: #363842;
@@ -1404,18 +1409,17 @@ a {
     padding: 10px;
     background: #007991;
     color: white;
-    margin-top: 255px;
+    margin-top: 285px;
     padding-left: 15px;
     padding-right: 15px;
-    font-size: 15px;
-    width: 140px;
-    height: 45px;
+    font-size: 30px;
+    width: 240px;
+    height: 65px;
+    cursor: pointer;
     transition: all 0.5s linear 1.3s;
     transform: translateY(100px);
     opacity: 0;
   }
-
-
 
   #sec5 {
     height: 150%;
@@ -1423,7 +1427,7 @@ a {
     color: white;
     font-weight: 100;
     position: relative;
-    top: 80px;
+    top: 45vh;
   }
 
   .text5_new {
@@ -1453,13 +1457,13 @@ a {
 
   #sec4 {
     background-color: white;
-    margin-top: 60px;
+    margin-top: 40vh;
     margin-left: 10vw;
     /* padding-bottom: 10vh; */
   }
 
   .image_div {
-    margin-top: 5vh;
+    margin-top: 7vh;
     margin-left: 3vh;
     width: 130px;
   }
