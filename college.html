@@ -46,30 +46,129 @@
         <div class="bg_layer3 menu_bg_layer" id="menu1"></div>
         <div class="bg_layer2 menu_bg_layer" id="menu2"></div>
     </div>
-    <div class="container">
+    <div class="container box1">
         <p id="title"></p>
+    </div>
+    <div class="container">
+        <img src="./fbmale.png" alt="president" class="president">
+        <h4 class="president_title">Message from the president</h4>
+        <p class="message">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas commodi sint quos sapiente
+            amet tempore aspernatur numquam assumenda neque deleniti.</p>
     </div>
     <div class="container">
         <h2 class="heading1">Making NIT Agartala mentally fit</h2>
         <div class="box">
-            <img src="./Tharun.png" alt="" class="image">
-            <h3 class="sub_heading">Awareness</h3>
+            <div class="letter">
+                <h1>A</h1>
+            </div>
+            <div class="title2">
+                <h3 class="sub_heading">Awareness</h3>
+                <div class="link" onclick="pressed('1')">
+                    <i class="fa fa-angle-down fa-2x icon" id="icon1" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="content1" id="content1">
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quisquam consectetur
+                    repellendus, eveniet sint dolore deleniti nostrum libero iusto ut!</p>
+            </div>
+
         </div>
         <div class="box">
-            <img src="./Tharun.png" alt="" class="image">
-            <h3 class="sub_heading">Stigma</h3>
+            <div class="letter">
+                <h1>S</h1>
+            </div>
+            <div class="title2">
+                <h3 class="sub_heading">Stigma</h3>
+                <div class="link" onclick="pressed('2')">
+                    <i class="fa fa-angle-down fa-2x icon" id="icon2" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="content1" id="content2">
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quisquam consectetur
+                    repellendus, eveniet sint dolore deleniti nostrum libero iusto ut!</p>
+            </div>
         </div>
         <div class="box">
-            <img src="./Tharun.png" alt="" class="image">
-            <h3 class="sub_heading">Literacy</h3>
+            <div class="letter">
+                <h1>L</h1>
+            </div>
+            <div class="title2">
+                <h3 class="sub_heading">Literacy</h3>
+                <div class="link" onclick="pressed('3')">
+                    <i class="fa fa-angle-down fa-2x icon" id="icon3" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="content1" id="content3">
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quisquam consectetur
+                    repellendus, eveniet sint dolore deleniti nostrum libero iusto ut!</p>
+            </div>
         </div>
     </div>
     <div class="container" id="road">
         <h2 class="main_title">Roadmap</h2>
         <div class="button_box">
-            <button class="path_button" id="button_one">1</button>
-            <button class="path_button" id="button_two">2</button>
-            <button class="path_button" id="button_three">3</button>
+            <button class="path_button" id="button1" onclick="content(0,1,2)">1</button>
+            <button class="path_button" id="button2" onclick="content(1,0,2)">2</button>
+            <button class="path_button" id="button3" onclick="content(2,0,1)">3</button>
+        </div>
+        <div class="content_dialog">
+            <div class="content_title" id="content_title">OC Team Recruitment</div>
+            <div class="content_para">
+                <h6 class="content_subtitle">Time:</h6>
+                <p class="content_subpara" id="time">10:00am</p>
+            </div>
+            <div class="content_para">
+                <h6 class="content_subtitle">Date:</h6>
+                <p class="content_subpara" id="date">Saturday, November 2, 2019</p>
+            </div>
+            <div class="content_para">
+                <h6 class="content_subtitle">Venue:</h6>
+                <p class="content_subpara" id="venue">E-CELL Class Room</p>
+            </div>
+            <div class="content_para">
+                <h6 class="content_subtitle">Additional Info:</h6>
+                <p class="content_subpara" id="info">Brainstorming, Team Structure, Recruitment</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="team_title">Team members</h2>
+        <div class="team_members">
+            <img src="./fbfemale.png" alt="" class="member_photo">
+            <h4 class="member_name">Lorem, ipsum</h4>
+            <p class="member_position">amet consectetur.</p>
+        </div>
+        <div class="team_members">
+            <img src="./fbmale.png" alt="" class="member_photo">
+            <h4 class="member_name">Lorem, ipsum</h4>
+            <p class="member_position">amet consectetur.</p>
+        </div>
+        <div class="team_members">
+            <img src="./fbfemale.png" alt="" class="member_photo">
+            <h4 class="member_name">Lorem, ipsum</h4>
+            <p class="member_position">amet consectetur.</p>
+        </div>
+        <div class="team_members">
+            <img src="./fbmale.png" alt="" class="member_photo">
+            <h4 class="member_name">Lorem, ipsum</h4>
+            <p class="member_position">amet consectetur.</p>
+        </div>
+    </div>
+    <div class="container">
+        <h3 class="college_title">List of colleges</h3>
+        <div class="college_list">
+            <img src="./heart.png" alt="college" class="college">
+            <img src="./heart.png" alt="college" class="college">
+            <img src="./heart.png" alt="college" class="college">
+            <img src="./heart.png" alt="college" class="college">
+            <img src="./heart.png" alt="college" class="college">
+            <img src="./heart.png" alt="college" class="college">
+            <img src="./heart.png" alt="college" class="college">
+            <img src="./heart.png" alt="college" class="college">
+            <img src="./heart.png" alt="college" class="college">
+            <img src="./heart.png" alt="college" class="college">
+            <img src="./heart.png" alt="college" class="college">
+            <img src="./heart.png" alt="college" class="college">
         </div>
     </div>
 </body>
