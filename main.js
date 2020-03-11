@@ -1,6 +1,6 @@
 var i = 0;
 var txt = "Improving student wellbeing";
-var speed = 100;
+var speed = 50;
 
 function addSymbols() {
   document.getElementById("title").innerHTML = document

@@ -12,7 +12,7 @@
   ];
   var ch = 0;
   var depressionCount = 0;
-
+  var reasons = {};
   displayQuestions();
   var width = (screen.availWidth / 9);
   var barwidth = 0;
@@ -27,7 +27,7 @@
     } else {
       barwidth += width;
       document.getElementById('progressbar').style.width = barwidth.toString() + 'px';
-      displayResult(depressionCount);
+      displayResult(depressionCount, reasons);
     }
   }
 
@@ -37,23 +37,27 @@
   var o4 = document.getElementById("o4");
 
   o1.onclick = function () {
+    reasons[ch] = 0;
     displayQuestions();
   };
   o2.onclick = function () {
+    reasons[ch] = 1;
     depressionCount += 1;
     displayQuestions();
   };
   o3.onclick = function () {
+    reasons[ch] = 2;
     depressionCount += 2;
     displayQuestions();
   };
   o4.onclick = function () {
+    reasons[ch] = 3;
     depressionCount += 3;
     displayQuestions();
   };
 })();
 
-function displayResult(s) {
+function displayResult(s, reasons) {
   document.getElementById("question").classList.add("opac");
   document.getElementById("options").classList.add("opac");
   document.getElementById("res").classList.remove("opac");
@@ -74,6 +78,14 @@ function displayResult(s) {
   document.getElementById("circle2")
     .style.strokeDashoffset = (660 * (s / 27)).toString();
   console.log(s);
+  var items = Object.keys(reasons).map(function (key) {
+    return [key, reasons[key]];
+  });
+  items.sort(function (first, second) {
+    return second[1] - first[1];
+  });
+  reasons = items.slice(0, 3);
+  console.log(reasons[0][0], reasons[1][0], reasons[2][0]);
 }
 
 $(document).ready(function () {
