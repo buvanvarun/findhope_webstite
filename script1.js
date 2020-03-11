@@ -1,3 +1,6 @@
+var solutions = [
+  "<h1>Tips to overcome lack of interest</h1><br><br><h2>Passion</h2><br>You will more easily feel passion for something in the short-term if the end-goal is meaningful for you in the long-term (i.e. if you can envision a better future).<br><br><h2>Sleep</h2><br>Sleep works to reduce depression and anhedonia by reducing fatigue, improving cognitive function, and increasing motivation.<br><br><h2><br>Mindfulness</h2>Stop seeking pleasure all the time. Constant exposure to pleasurable stimuli will remove any sense of novelty in your life."
+];
 (function () {
   var questions = [
     'Little interest or <span style="color: #70db70;">pleasure</span> in doing things in the past two weeks',
@@ -10,6 +13,7 @@
     'Moving or speaking so slowly or behaving <span style="color: #70db70;">restlessly</span>than usual in the past two weeks',
     'Thoughts that you would be better off dead,or of <span style="color: #70db70;">hurting</span> yourself in the past two weeks'
   ];
+
   var ch = 0;
   var depressionCount = 0;
   var reasons = {};
@@ -86,6 +90,7 @@ function displayResult(s, reasons) {
   });
   reasons = items.slice(0, 3);
   console.log(reasons[0][0], reasons[1][0], reasons[2][0]);
+  document.getElementById('tip1').innerHTML = solutions[reasons[0][0] - 1];
 }
 
 $(document).ready(function () {
