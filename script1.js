@@ -91,6 +91,8 @@ function displayResult(s, reasons) {
   reasons = items.slice(0, 3);
   console.log(reasons[0][0], reasons[1][0], reasons[2][0]);
   document.getElementById('tip1').innerHTML = solutions[reasons[0][0] - 1];
+  document.getElementById('tip2').innerHTML = solutions[reasons[0][0] - 1];
+  document.getElementById('tip3').innerHTML = solutions[reasons[0][0] - 1];
 }
 
 $(document).ready(function () {
