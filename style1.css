@@ -228,9 +228,7 @@ svg circle:nth-child(2) {
 
 }
 
-#tip1,
-#tip2,
-#tip3 {
+.tips {
   width: 90vw;
   margin-left: 5vw;
   box-shadow: 0px 0px 20px #0000001a;
@@ -245,4 +243,41 @@ svg circle:nth-child(2) {
   font-size: 25px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.path_button {
+  border-radius: 50%;
+  border: none;
+  width: 50px;
+  height: 50px;
+  color: white;
+  font-size: 25px;
+  background-color: #70db70;
+}
+
+#button_one :hover {
+  cursor: pointer;
+}
+
+#button1 {
+  opacity: 1;
+}
+
+#button2 {
+  opacity: 0.2;
+}
+
+#button3 {
+  opacity: 0.2;
+}
+
+.path_button :hover {
+  cursor: pointer;
+}
+
+.button_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
 }
