@@ -174,6 +174,10 @@
   top: 10%;
   text-align: center;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .r {
@@ -202,6 +206,7 @@ svg {
   height: 250px;
   z-index: 1;
   transform: rotateZ(-90deg) scaleY(-1);
+  margin-right: 80px;
 }
 
 svg circle {
@@ -223,10 +228,10 @@ svg circle:nth-child(2) {
 }
 
 .text {
-  position: absolute;
+  position: relative;
   font-size: 38px;
-  top: 16vh;
-  left: 39vw;
+  left: 180px;
+  bottom: 115px;
 }
 
 .tips {
@@ -238,8 +243,13 @@ svg circle:nth-child(2) {
   padding-bottom: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
+  text-align: center !important;
 }
-
+#r1,
+#r2,
+#r3 {
+  text-align: center;
+}
 .tips_title {
   font-size: 25px;
   margin-top: 20px;
@@ -287,10 +297,12 @@ svg circle:nth-child(2) {
 #r2,
 #r3 {
   margin-left: 30px;
+  margin-bottom: 10px;
 }
 
 .list {
   text-align: left;
   font-size: 18px;
   margin-top: 20px;
+  list-style: none;
 }
