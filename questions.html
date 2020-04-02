@@ -47,10 +47,24 @@
         <div class="bg_layer2 menu_bg_layer" id="menu2"></div>
     </div>
     <div class="content_container">
-        <form action="/action_page.php">
-            <div class="test_container">
-
+        <div class="main_container">
+            <h1 class="main_title">IKIGAI</h1>
+            <p class="main_content">Ikigai is something you can do every day for as little as 10 minutes that
+                gives
+                intense Satisfaction and pleasure, this
+                acute pleasure is enough to make you immune to stress and Loneliness for the whole day.<br><br>
+                Ikigai is not a hobby or passion, it's the purpose of your Life. This has the potential to even
+                turn
+                into your career and
+                earn a living while bringing positive change to society. <br><br>
+                To find your IKigai or Purpose of your life Answer the following Questions .</p>
+        </div>
+        <div class="test_container">
+            <div class="question_box">
                 <h2 class="test_title" id="q1">What is it that you love ?</h2>
+                <i class="fa fa-chevron-down plus" aria-hidden="true" onclick="expand('0')" id="icon0"></i>
+            </div>
+            <div class="hide_container" id="hide0">
                 <p class="test_content" id="c1">
                     To truly understand and find what you love, consider the following
                     underlying questions,only then this broad sense of “ Love” will be of
@@ -80,9 +94,13 @@
                     </div>
                 </div>
             </div>
-            <div class="test_container">
-
+        </div>
+        <div class="test_container">
+            <div class="question_box">
                 <h2 class="test_title" id="q1">What are you good at ?</h2>
+                <i class="fa fa-chevron-down  plus" aria-hidden="true" onclick="expand('1')" id="icon1"></i>
+            </div>
+            <div class="hide_container" id="hide1">
                 <p class="test_content" id="c1">
                     To truly understand and find what you are really good at , consider the following underlying
                     questions,only then this broad sense of “ Good” will be of meaning.
@@ -114,9 +132,13 @@
                     </div>
                 </div>
             </div>
-            <div class="test_container">
-
+        </div>
+        <div class="test_container">
+            <div class="question_box">
                 <h2 class="test_title" id="q1">What does the world need from you ?</h2>
+                <i class="fa fa-chevron-down  plus" aria-hidden="true" onclick="expand('2')" id="icon2"></i>
+            </div>
+            <div class="hide_container" id="hide2">
                 <p class="test_content" id="c1">
                 </p>
                 <div class="question_container">
@@ -141,9 +163,13 @@
                     </div>
                 </div>
             </div>
-            <div class="test_container">
-
+        </div>
+        <div class="test_container">
+            <div class="question_box">
                 <h2 class="test_title" id="q1">What can you get paid for?</h2>
+                <i class="fa fa-chevron-down  plus" aria-hidden="true" onclick="expand('3')" id="icon3"></i>
+            </div>
+            <div class="hide_container" id="hide3">
                 <p class="test_content" id="c1">
                 </p>
                 <div class="question_container">
@@ -180,11 +206,8 @@
                     </div>
                 </div>
             </div>
-        </form>
-        <p class="warning" id="warn"></p>
-        <div class="results" id="result" style="display: none;"></div>
-        <button class="button_container button_container2" id='button' onclick="nextQuestion()">Next
-            Question</button>
+        </div>
+        <div class="pl"></div>
     </div>
 </body>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
