@@ -185,12 +185,13 @@ a {
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 20px;
-  box-shadow: 0px 0px 20px #0000001a;
+  box-shadow: 0px 0px 12px #0000001a;
   margin-bottom: 10px;
 }
 
 .test_title {
   font-size: 20px;
+  margin-left: 20px;
 }
 
 .test_content {
