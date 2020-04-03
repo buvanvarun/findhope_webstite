@@ -17,3 +17,14 @@ function onclik() {
         }, 200);
     }
 }
+
+function pressed() {
+    document.getElementById("content").style.display = "none";
+    document.getElementById("results").style.display = "block";
+    for (var i = 0; i <= 3; i++) {
+        for (var j = 0; j < 3; j++) {
+            var content = document.getElementById("answer" + i.toString() + j.toString()).value;
+            document.getElementById('a' + i.toString() + j.toString()).innerHTML = content;
+        }
+    }
+}

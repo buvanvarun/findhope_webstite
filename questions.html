@@ -38,15 +38,12 @@
                 <li class="menu__item">
                     <a href="./mentalWellnessTest.html">Take A Test</a>
                 </li>
-                <li class="menu__item">
-                    <a href="./aboutus.html">About Us</a>
-                </li>
             </ul>
         </div>
         <div class="bg_layer3 menu_bg_layer" id="menu1"></div>
         <div class="bg_layer2 menu_bg_layer" id="menu2"></div>
     </div>
-    <div class="content_container">
+    <div class="content_container" id="content">
         <div class="main_container">
             <h1 class="main_title">IKIGAI</h1>
             <p class="main_content">Ikigai is something you can do every day for as little as 10 minutes that
@@ -61,7 +58,7 @@
         </div>
         <div class="test_container">
             <div class="question_box">
-                <h2 class="test_title" id="q1">What is it that you love ?</h2>
+                <h2 class="test_title">What is it that you love ?</h2>
                 <i class="fa fa-chevron-down plus" aria-hidden="true" onclick="expand('0')" id="icon0"></i>
             </div>
             <div class="hide_container" id="hide0">
@@ -72,25 +69,32 @@
                 </p>
                 <div class="question_container">
                     <div class="question_wrapper">
-                        <p class="question" id="q2">
+                        <p class="question" id="q00">
                             What would you do if money was never the option ?
                         </p>
-                        <textarea class="answer" id="answer11"></textarea>
+                        <p class="sample_answer">Ex-Photography, Drawing, Travel.. </p>
+                        <textarea class="answer" id="answer00"></textarea>
                     </div>
                     <div class="question_wrapper">
-                        <p class="question" id="q3">
+                        <p class="question" id="q01">
                             If you were to present to a room full of people on a topic, what
                             would it be?
                         </p>
-                        <textarea class="answer" id="answer11"></textarea>
+                        <p class="sample_answer"> Ex -Using Mobile to take amazing Photographs, Travel with practically
+                            no
+                            money, Solving
+                            Problems.</p>
+                        <textarea class="answer" id="answer01"></textarea>
                     </div>
                     <div class="question_wrapper">
-                        <p class="question" id="q4">
+                        <p class="question" id="q02">
                             When working on something or doing something-You enjoy the task
                             without worrying and whatever you do you feel nothing seems wrong
                             and this gets you lose track of time?
                         </p>
-                        <textarea class="answer" id="answer11"></textarea>
+                        <p class="sample_answer">Ex- Drawing a scene , Searching for the correct angle to take a
+                            picture, Designing Products..</p>
+                        <textarea class="answer" id="answer02"></textarea>
                     </div>
                 </div>
             </div>
@@ -107,28 +111,25 @@
                 </p>
                 <div class="question_container">
                     <div class="question_wrapper">
-                        <p class="question" id="q2">
+                        <p class="question" id="q10">
                             What practical skills are you talented at ?
                         </p>
-                        <textarea class="answer" id="answer11"></textarea>
+                        <p class="sample_answer">Ex- Photography and Drawing.</p>
+                        <textarea class="answer" id="answer10"></textarea>
                     </div>
                     <div class="question_wrapper">
-                        <p class="question" id="q3">
-                            Have you won any awards?
+                        <p class="question" id="q11">
+                            Have you won any awards - If yes, what skills did you use to achieve it ?
                         </p>
+                        <p class="sample_answer">Ex- Drawing</p>
                         <textarea class="answer" id="answer11"></textarea>
                     </div>
                     <div class="question_wrapper">
-                        <p class="question" id="q4">
-                            Are there any ways you can develop or foster your talents?
-                        </p>
-                        <textarea class="answer" id="answer11"></textarea>
-                    </div>
-                    <div class="question_wrapper">
-                        <p class="question" id="q3">
+                        <p class="question" id="q12">
                             What are the skills that you feel easy to do, while others might not ?
                         </p>
-                        <textarea class="answer" id="answer11"></textarea>
+                        <p class="sample_answer">Ex- Brainstorming and finding solutions.</p>
+                        <textarea class="answer" id="answer12"></textarea>
                     </div>
                 </div>
             </div>
@@ -143,23 +144,26 @@
                 </p>
                 <div class="question_container">
                     <div class="question_wrapper">
-                        <p class="question" id="q2">
+                        <p class="question" id="q20">
                             Are there any social/environmental or economic problems that you want to help solve?
                         </p>
-                        <textarea class="answer" id="answer11"></textarea>
+                        <p class="sample_answer">Ex - Emotional development, Employment etc</p>
+                        <textarea class="answer" id="answer20"></textarea>
                     </div>
                     <div class="question_wrapper">
-                        <p class="question" id="q3">
+                        <p class="question" id="q21">
                             Are there any issues in your community or work that touch you emotionally?
                         </p>
-                        <textarea class="answer" id="answer11"></textarea>
+                        <p class="sample_answer">Ex - Lack of Help for those in need of emotional support.</p>
+                        <textarea class="answer" id="answer21"></textarea>
                     </div>
                     <div class="question_wrapper">
-                        <p class="question" id="q4">
+                        <p class="question" id="q22">
                             If you were to ask your family/close friends around you, What would they say that you
                             advocate/stand for ?
                         </p>
-                        <textarea class="answer" id="answer11"></textarea>
+                        <p class="sample_answer">Ex - Empathy</p>
+                        <textarea class="answer" id="answer22"></textarea>
                     </div>
                 </div>
             </div>
@@ -175,39 +179,186 @@
                 <div class="question_container">
                     <div class="question_wrapper">
                         <p class="question" id="q2">
-                            Do you feel that you are doing in your current career path?
+                            What Skills are you getting paid for? ( or what skills will you be using to get paid for in
+                            near future)
                         </p>
-                        <textarea class="answer" id="answer11"></textarea>
+                        <p class="sample_answer">Ex - Photography, Engineering Degree</p>
+                        <textarea class="answer" id="answer30"></textarea>
                     </div>
                     <div class="question_wrapper">
                         <p class="question" id="q3">
-                            Is there any overlap with your career and your other 4 aspects of Ikigai?
-                        </p>
-                        <textarea class="answer" id="answer11"></textarea>
-                    </div>
-                    <div class="question_wrapper">
-                        <p class="question" id="q4">
                             Do you use your talents and passion in what you do for a career?
                         </p>
-                        <textarea class="answer" id="answer11"></textarea>
-                    </div>
-                    <div class="question_wrapper">
-                        <p class="question" id="q3">
-                            Did you study or can you further study to develop the career you want ?What professional
-                            development do you have planned?
-                        </p>
-                        <textarea class="answer" id="answer11"></textarea>
+                        <p class="sample_answer">Ex - No</p>
+                        <textarea class="answer" id="answer31"></textarea>
                     </div>
                     <div class="question_wrapper">
                         <p class="question" id="q4">
-                            What results bring you more satisfaction?
+                            How can you use the skills you are good at and you love doing to earn money ?
                         </p>
-                        <textarea class="answer" id="answer11"></textarea>
+                        <p class="sample_answer">Ex- Freelancing photography</p>
+                        <textarea class="answer" id="answer32"></textarea>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="pl"></div>
+        <div class="button_wrapper">
+            <button class="results_button" onclick="pressed()">Results</button>
+        </div>
+    </div>
+    <div class="wrapper" id="results">
+        <div class="results_container">
+            <div class="result_row">
+                <div class="result" style="background-color: #B02896;">
+                    <p class="result_title">I Love Doing</p>
+                    <p id="a00"></p>
+                    <p id="a01"></p>
+                    <p id="a02"></p>
+                </div>
+                <div class="result" style=" background-color: #13BD74;">
+                    <p class="result_title">I am good at</p>
+                    <p id="a10"></p>
+                    <p id="a11"></p>
+                    <p id="a12"></p>
+                </div>
+            </div>
+            <div class="result_row">
+                <div class="result" style="background-color: #EC1E32;">
+                    <p class="result_title">What world needs</p>
+                    <p id="a20"></p>
+                    <p id="a21"></p>
+                    <p id="a22"></p>
+                </div>
+                <div class="result" style="background-color: #3B0EBE;">
+                    <p class="result_title">I can be paid for</p>
+                    <p id="a30"></p>
+                    <p id="a31"></p>
+                    <p id="a32"></p>
+                </div>
+            </div>
+        </div>
+        <div class="ikigai_container">
+            <h2>Find the common aspects</h2>
+            <div class="ikigai">
+                <h3>My ikigai is: </h3>
+                <input type="text">
+            </div>
+        </div>
+        <div class="solutions_container">
+            <h1>Implementing your ikigai</h1>
+            <div class="test_container">
+                <div class="question_box">
+                    <h2 class="test_title">Start Small​</h2>
+                    <i class="fa fa-chevron-down plus" aria-hidden="true" onclick="expand('5')" id="icon5"></i>
+                </div>
+                <div class="hide_container" id="hide5">
+                    <p class="test_content" id="c1">
+                        You don't have to paint a 5 feet painting, start with something as small as a flower.
+                        <br><br><br>
+                        This is my plan to integrate Ikigai into my day for 10 minutes.
+                    </p>
+                    <div class="question_container">
+                        <div class="question_wrapper">
+                            <p class="question">
+                                Time:
+                            </p>
+                            <textarea class="answer"></textarea>
+                        </div>
+                        <div class="question_wrapper">
+                            <p class="question">
+                                Place:
+                            </p>
+                            <textarea class="answer"></textarea>
+                        </div>
+                        <div class="question_wrapper">
+                            <p class="question">
+                                What Will I do:
+                            </p>
+                            <textarea class="answer"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="test_container">
+                <div class="question_box">
+                    <h2 class="test_title">Accept Yourself</h2>
+                    <i class="fa fa-chevron-down plus" aria-hidden="true" onclick="expand('6')" id="icon6"></i>
+                </div>
+                <div class="hide_container" id="hide6">
+                    <p class="test_content" id="c1">
+                        Don't overestimate or underestimate yourself, Be very Honest while you
+                        evaluate your skill and even do not feel embarrassed no matter how naive your work is. Just
+                        love it !
+                    </p>
+                    <div class="question_container">
+                        <div class="question_wrapper">
+                            <p class="question">
+                                Write down your ikigai and mention that you will be honest and not be embarrassed or
+                                boastful
+                                about it.
+                            </p>
+                            <p class="sample_answer">Ex - building products for emotional well-being is my IKigai and I
+                                won't feel bad even if it is as
+                                bad as this.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="test_container">
+                <div class="question_box">
+                    <h2 class="test_title">Harmony</h2>
+                    <i class="fa fa-chevron-down plus" aria-hidden="true" onclick="expand('7')" id="icon7"></i>
+                </div>
+                <div class="hide_container" id="hide7">
+                    <p class="test_content" id="c1">
+                        Understand the effect you can have on society because of Ikigai.
+                    </p>
+                    <div class="question_container">
+                        <div class="question_wrapper">
+                            <p class="sample_answer">Ex - If you love football use it to make new friends so that you
+                                have an active social life or do it
+                                as soon as you wake up so that you will learn to wake up early.</p>
+                            <textarea class="answer"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="test_container">
+                <div class="question_box">
+                    <h2 class="test_title">The Joy of Little Things​</h2>
+                    <i class="fa fa-chevron-down plus" aria-hidden="true" onclick="expand('8')" id="icon8"></i>
+                </div> <textarea class="answer"></textarea>
+                <div class="hide_container" id="hide8">
+                    <p class="test_content" id="c1">
+                        Use your Ikigai for bringing positive health.
+                        <div class="question_container">
+                            <div class="question_wrapper">
+                                <p class="sample_answer">Ex- If you love football use it to make new friends so that you
+                                    have an active social life or do it
+                                    as soon as you wake up so that you will learn to wake up early.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="test_container">
+                <div class="question_box">
+                    <h2 class="test_title">Be here and Now​</h2>
+                    <i class="fa fa-chevron-down plus" aria-hidden="true" onclick="expand('10')" id="icon10"></i>
+                </div>
+                <div class="hide_container" id="hide10">
+                    <p class="test_content" id="c1">
+                        You have to please no one with your Ikigai, Not even yourself !
+                        <div class="question_container">
+                            <div class="question_wrapper">
+                                <p class="sample_answer">Ex- play that song even if no one is watching,Draw that
+                                    picture, Take a photograph even if no
+                                    one is watching. No matter how bad it is and even if it's for a little over 10
+                                    minutes.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
