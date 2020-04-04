@@ -1,459 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./resStyles.css" />
-    <title>Questions</title>
-  </head>
 
-  <body>
-    <div class="navbar" id="t1">
-      <div class="heading">
-        <a href="./index.html">
-          <div>
-            <h1 class="text">FindHope.</h1>
-          </div>
-        </a>
-        <div class="menu__label menu__btn" onclick="onclik()">
-          <i class="fa fa-bars fa-2x btn" aria-hidden="true"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./resStyles.css" />
+  <title>Questions</title>
+</head>
+
+<body>
+  <div class="navbar" id="t1">
+    <div class="heading">
+      <a href="./index.html">
+        <div>
+          <h1 class="text">FindHope.</h1>
         </div>
+      </a>
+      <div class="menu__label menu__btn" onclick="onclik()">
+        <i class="fa fa-bars fa-2x btn" aria-hidden="true"></i>
       </div>
-      <div class="menu__container" id="menu" style="visibility: hidden;">
-        <span class="menu__title">FindHope</span>
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="./index.html">Home</a>
-          </li>
-          <li class="menu__item">
-            <a href="./get_help.html">Get Help</a>
-          </li>
-          <li class="menu__item">
-            <a href="./stories.html">Stories</a>
-          </li>
-          <li class="menu__item">
-            <a href="./youthadvocates.html">Youth Advocates</a>
-          </li>
-          <li class="menu__item">
-            <a href="./mentalWellnessTest.html">Take A Test</a>
-          </li>
-        </ul>
-      </div>
-      <div class="bg_layer3 menu_bg_layer" id="menu1"></div>
-      <div class="bg_layer2 menu_bg_layer" id="menu2"></div>
     </div>
-    <div class="content_container" id="content">
-      <div class="main_container">
-        <h1 class="main_title">IKIGAI</h1>
-        <p class="main_content">
-          Ikigai is something you can do every day for as little as 10 minutes
-          that gives intense Satisfaction and pleasure, this acute pleasure is
-          enough to make you immune to stress and Loneliness for the whole
-          day.<br /><br />
-          Ikigai is not a hobby or passion, it's the purpose of your Life. This
-          has the potential to even turn into your career and earn a living
-          while bringing positive change to society. <br /><br />
-          To find your IKigai or Purpose of your life Answer the following
-          Questions .
+    <div class="menu__container" id="menu" style="visibility: hidden;">
+      <span class="menu__title">FindHope</span>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="./get_help.html">Get Help</a>
+        </li>
+        <li class="menu__item">
+          <a href="./stories.html">Stories</a>
+        </li>
+        <li class="menu__item">
+          <a href="./youthadvocates.html">Youth Advocates</a>
+        </li>
+        <li class="menu__item">
+          <a href="./mentalWellnessTest.html">Take A Test</a>
+        </li>
+      </ul>
+    </div>
+    <div class="bg_layer3 menu_bg_layer" id="menu1"></div>
+    <div class="bg_layer2 menu_bg_layer" id="menu2"></div>
+  </div>
+  <div class="content_container" id="content">
+    <div class="main_container">
+      <h1 class="main_title">IKIGAI</h1>
+      <p class="main_content">
+        Ikigai is something you can do every day for as little as 10 minutes
+        that gives intense Satisfaction and pleasure, this acute pleasure is
+        enough to make you immune to stress and Loneliness for the whole
+        day.<br /><br />
+        Ikigai is not a hobby or passion, it's the purpose of your Life. This
+        has the potential to even turn into your career and earn a living
+        while bringing positive change to society. <br /><br />
+        To find your IKigai or Purpose of your life Answer the following
+        Questions .
+      </p>
+    </div>
+    <div class="test_container">
+      <div class="question_box" onclick="expand('0')" style="cursor: pointer;">
+        <h2 class="test_title">What is it that you love ?</h2>
+        <i class="fa fa-chevron-down plus" aria-hidden="true" id="icon0"></i>
+      </div>
+      <div class="hide_container" id="hide0">
+        <p class="test_content" id="c1">
+          To truly understand and find what you love, consider the following
+          underlying questions,only then this broad sense of “ Love” will be
+          of meaning.
         </p>
-      </div>
-      <div class="test_container">
-        <div
-          class="question_box"
-          onclick="expand('0')"
-          style="cursor: pointer;"
-        >
-          <h2 class="test_title">What is it that you love ?</h2>
-          <i class="fa fa-chevron-down plus" aria-hidden="true" id="icon0"></i>
-        </div>
-        <div class="hide_container" id="hide0">
-          <p class="test_content" id="c1">
-            To truly understand and find what you love, consider the following
-            underlying questions,only then this broad sense of “ Love” will be
-            of meaning.
-          </p>
-          <div class="question_container">
-            <div class="question_wrapper">
-              <p class="question" id="q00">
-                What would you do if money was never the option ?
-              </p>
-              <p class="sample_answer">Ex-Photography, Drawing, Travel..</p>
-              <textarea class="answer" id="answer00"></textarea>
-            </div>
-            <div class="question_wrapper">
-              <p class="question" id="q01">
-                On what Topic can you talk at length to a room full of audience
-                ?
-              </p>
-              <p class="sample_answer">
-                Ex -Using Mobile to take amazing Photographs, Travel with
-                practically no money, Solving Problems.
-              </p>
-              <textarea class="answer" id="answer01"></textarea>
-            </div>
-            <div class="question_wrapper">
-              <p class="question" id="q02">
-                When working on something-You enjoy the task without worrying
-                and you lose track of time?
-              </p>
-              <p class="sample_answer">
-                Ex- Drawing a scene , Searching for the correct angle to take a
-                picture, Designing Products..
-              </p>
-              <textarea class="answer" id="answer02"></textarea>
-            </div>
+        <div class="question_container">
+          <div class="question_wrapper">
+            <p class="question" id="q00">
+              What would you do if money was never the option ?
+            </p>
+            <p class="sample_answer">Ex-Photography, Drawing, Travel..</p>
+            <textarea class="answer" id="answer00"></textarea>
+          </div>
+          <div class="question_wrapper">
+            <p class="question" id="q01">
+              On what Topic can you talk at length to a room full of audience
+              ?
+            </p>
+            <p class="sample_answer">
+              Ex -Using Mobile to take amazing Photographs, Travel with
+              practically no money, Solving Problems.
+            </p>
+            <textarea class="answer" id="answer01"></textarea>
+          </div>
+          <div class="question_wrapper">
+            <p class="question" id="q02">
+              When working on something-You enjoy the task without worrying
+              and you lose track of time?
+            </p>
+            <p class="sample_answer">
+              Ex- Drawing a scene , Searching for the correct angle to take a
+              picture, Designing Products..
+            </p>
+            <textarea class="answer" id="answer02"></textarea>
           </div>
         </div>
-      </div>
-      <div class="test_container">
-        <div
-          class="question_box"
-          onclick="expand('1')"
-          style="cursor: pointer;"
-        >
-          <h2 class="test_title" id="q1">What are you good at ?</h2>
-          <i class="fa fa-chevron-down plus" aria-hidden="true" id="icon1"></i>
-        </div>
-        <div class="hide_container" id="hide1">
-          <p class="test_content" id="c1">
-            To truly understand and find what you are really good at , consider
-            the following underlying questions,only then this broad sense of “
-            Good” will be of meaning.
-          </p>
-          <div class="question_container">
-            <div class="question_wrapper">
-              <p class="question" id="q10">
-                What practical skills are you talented at ?
-              </p>
-              <p class="sample_answer">Ex- Photography and Drawing.</p>
-              <textarea class="answer" id="answer10"></textarea>
-            </div>
-            <div class="question_wrapper">
-              <p class="question" id="q11">
-                Have you won any awards - If yes, what skills did you use to
-                achieve it ?
-              </p>
-              <p class="sample_answer">Ex- Drawing</p>
-              <textarea class="answer" id="answer11"></textarea>
-            </div>
-            <div class="question_wrapper">
-              <p class="question" id="q12">
-                What are the skills that you feel easy to do, while others might
-                not ?
-              </p>
-              <p class="sample_answer">
-                Ex- Brainstorming and finding solutions.
-              </p>
-              <textarea class="answer" id="answer12"></textarea>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="test_container">
-        <div
-          class="question_box"
-          onclick="expand('2')"
-          style="cursor: pointer;"
-        >
-          <h2 class="test_title" id="q1">
-            What does the world need from you ?
-          </h2>
-          <i class="fa fa-chevron-down plus" aria-hidden="true" id="icon2"></i>
-        </div>
-        <div class="hide_container" id="hide2">
-          <p class="test_content" id="c1"></p>
-          <div class="question_container">
-            <div class="question_wrapper">
-              <p class="question" id="q20">
-                Are there any social/environmental or economic problems that you
-                want to help solve?
-              </p>
-              <p class="sample_answer">
-                Ex - Emotional development, Employment etc
-              </p>
-              <textarea class="answer" id="answer20"></textarea>
-            </div>
-            <div class="question_wrapper">
-              <p class="question" id="q21">
-                Are there any issues in your community or work that touch you
-                emotionally?
-              </p>
-              <p class="sample_answer">
-                Ex - Lack of Help for those in need of emotional support.
-              </p>
-              <textarea class="answer" id="answer21"></textarea>
-            </div>
-            <div class="question_wrapper">
-              <p class="question" id="q22">
-                If you were to ask your family/close friends around you, What
-                would they say that you support for ?
-              </p>
-              <p class="sample_answer">Ex - Empathy</p>
-              <textarea class="answer" id="answer22"></textarea>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="test_container">
-        <div
-          class="question_box"
-          onclick="expand('3')"
-          style="cursor: pointer;"
-        >
-          <h2 class="test_title" id="q1">What can you get paid for?</h2>
-          <i class="fa fa-chevron-down plus" aria-hidden="true" id="icon3"></i>
-        </div>
-        <div class="hide_container" id="hide3">
-          <p class="test_content" id="c1"></p>
-          <div class="question_container">
-            <div class="question_wrapper">
-              <p class="question" id="q2">
-                What Skills are you getting paid for? ( or what skills will you
-                be using to get paid for in near future)
-              </p>
-              <p class="sample_answer">Ex - Photography, Engineering Degree</p>
-              <textarea class="answer" id="answer30"></textarea>
-            </div>
-            <div class="question_wrapper">
-              <p class="question" id="q3">
-                Do you use your talents and passion in what you do for a career?
-              </p>
-              <p class="sample_answer">Ex - No</p>
-              <textarea class="answer" id="answer31"></textarea>
-            </div>
-            <div class="question_wrapper">
-              <p class="question" id="q4">
-                How can you use the skills you are good at and you love doing to
-                earn money ?
-              </p>
-              <p class="sample_answer">Ex- Freelancing photography</p>
-              <textarea class="answer" id="answer32"></textarea>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="button_wrapper">
-        <button class="results_button" onclick="pressed()">Results</button>
       </div>
     </div>
-    <div class="wrapper" id="results">
-      <div class="results_container">
-        <div class="result_row">
-          <div class="result" style="background-color: #b02896;">
-            <p class="result_title">I Love Doing</p>
-            <p id="a00"></p>
-            <p id="a01"></p>
-            <p id="a02"></p>
+    <div class="test_container">
+      <div class="question_box" onclick="expand('1')" style="cursor: pointer;">
+        <h2 class="test_title" id="q1">What are you good at ?</h2>
+        <i class="fa fa-chevron-down plus" aria-hidden="true" id="icon1"></i>
+      </div>
+      <div class="hide_container" id="hide1">
+        <p class="test_content" id="c1">
+          To truly understand and find what you are really good at , consider
+          the following underlying questions,only then this broad sense of “
+          Good” will be of meaning.
+        </p>
+        <div class="question_container">
+          <div class="question_wrapper">
+            <p class="question" id="q10">
+              What practical skills are you talented at ?
+            </p>
+            <p class="sample_answer">Ex- Photography and Drawing.</p>
+            <textarea class="answer" id="answer10"></textarea>
           </div>
-          <div class="result" style="background-color: #13bd74;">
-            <p class="result_title">I am good at</p>
-            <p id="a10"></p>
-            <p id="a11"></p>
-            <p id="a12"></p>
+          <div class="question_wrapper">
+            <p class="question" id="q11">
+              Have you won any awards - If yes, what skills did you use to
+              achieve it ?
+            </p>
+            <p class="sample_answer">Ex- Drawing</p>
+            <textarea class="answer" id="answer11"></textarea>
           </div>
-        </div>
-        <div class="result_row">
-          <div class="result" style="background-color: #ec1e32;">
-            <p class="result_title">What world needs</p>
-            <p id="a20"></p>
-            <p id="a21"></p>
-            <p id="a22"></p>
-          </div>
-          <div class="result" style="background-color: #3b0ebe;">
-            <p class="result_title">I can be paid for</p>
-            <p id="a30"></p>
-            <p id="a31"></p>
-            <p id="a32"></p>
+          <div class="question_wrapper">
+            <p class="question" id="q12">
+              What are the skills that you feel easy to do, while others might
+              not ?
+            </p>
+            <p class="sample_answer">
+              Ex- Brainstorming and finding solutions.
+            </p>
+            <textarea class="answer" id="answer12"></textarea>
           </div>
         </div>
       </div>
-      <div class="ikigai_container">
-        <h2>Find the common aspects</h2>
-        <div class="ikigai">
-          <h3>My ikigai is:</h3>
-          <input type="text" />
+    </div>
+    <div class="test_container">
+      <div class="question_box" onclick="expand('2')" style="cursor: pointer;">
+        <h2 class="test_title" id="q1">
+          What does the world need from you ?
+        </h2>
+        <i class="fa fa-chevron-down plus" aria-hidden="true" id="icon2"></i>
+      </div>
+      <div class="hide_container" id="hide2">
+        <p class="test_content" id="c1"></p>
+        <div class="question_container">
+          <div class="question_wrapper">
+            <p class="question" id="q20">
+              Are there any social/environmental or economic problems that you
+              want to help solve?
+            </p>
+            <p class="sample_answer">
+              Ex - Emotional development, Employment etc
+            </p>
+            <textarea class="answer" id="answer20"></textarea>
+          </div>
+          <div class="question_wrapper">
+            <p class="question" id="q21">
+              Are there any issues in your community or work that touch you
+              emotionally?
+            </p>
+            <p class="sample_answer">
+              Ex - Lack of Help for those in need of emotional support.
+            </p>
+            <textarea class="answer" id="answer21"></textarea>
+          </div>
+          <div class="question_wrapper">
+            <p class="question" id="q22">
+              If you were to ask your family/close friends around you, What
+              would they say that you support for ?
+            </p>
+            <p class="sample_answer">Ex - Empathy</p>
+            <textarea class="answer" id="answer22"></textarea>
+          </div>
         </div>
       </div>
-      <div class="solutions_container">
-        <h1>Implementing your ikigai</h1>
-        <div class="test_container">
-          <div
-            class="question_box"
-            onclick="expand('5')"
-            style="cursor: pointer;"
-          >
-            <h2 class="test_title">Start Small​</h2>
-            <i
-              class="fa fa-chevron-down plus"
-              aria-hidden="true"
-              id="icon5"
-            ></i>
-          </div>
-          <div class="hide_container" id="hide5">
-            <p class="test_content" id="c1">
-              You don't have to paint a 5 feet painting, start with something as
-              small as a flower.
-              <br /><br /><br />
-              This is my plan to integrate Ikigai into my day for 10 minutes.
+    </div>
+    <div class="test_container">
+      <div class="question_box" onclick="expand('3')" style="cursor: pointer;">
+        <h2 class="test_title" id="q1">What can you get paid for?</h2>
+        <i class="fa fa-chevron-down plus" aria-hidden="true" id="icon3"></i>
+      </div>
+      <div class="hide_container" id="hide3">
+        <p class="test_content" id="c1"></p>
+        <div class="question_container">
+          <div class="question_wrapper">
+            <p class="question" id="q2">
+              What Skills are you getting paid for? ( or what skills will you
+              be using to get paid for in near future)
             </p>
-            <div class="question_container">
-              <div class="question_wrapper">
-                <p class="question">
-                  Time:
-                </p>
-                <textarea class="answer"></textarea>
-              </div>
-              <div class="question_wrapper">
-                <p class="question">
-                  Place:
-                </p>
-                <textarea class="answer"></textarea>
-              </div>
-              <div class="question_wrapper">
-                <p class="question">
-                  What Will I do:
-                </p>
-                <textarea class="answer"></textarea>
-              </div>
+            <p class="sample_answer">Ex - Photography, Engineering Degree</p>
+            <textarea class="answer" id="answer30"></textarea>
+          </div>
+          <div class="question_wrapper">
+            <p class="question" id="q3">
+              Do you use your talents and passion in what you do for a career?
+            </p>
+            <p class="sample_answer">Ex - No</p>
+            <textarea class="answer" id="answer31"></textarea>
+          </div>
+          <div class="question_wrapper">
+            <p class="question" id="q4">
+              How can you use the skills you are good at and you love doing to
+              earn money ?
+            </p>
+            <p class="sample_answer">Ex- Freelancing photography</p>
+            <textarea class="answer" id="answer32"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="button_wrapper">
+      <button class="results_button" onclick="pressed()">Results</button>
+    </div>
+  </div>
+  <div class="wrapper" id="results">
+    <div class="results_container">
+      <div class="result_row">
+        <div class="result" style="background-color: #b02896;">
+          <p class="result_title">I Love Doing</p>
+          <p id="a00"></p>
+          <p id="a01"></p>
+          <p id="a02"></p>
+        </div>
+        <div class="result" style="background-color: #13bd74;">
+          <p class="result_title">I am good at</p>
+          <p id="a10"></p>
+          <p id="a11"></p>
+          <p id="a12"></p>
+        </div>
+      </div>
+      <div class="result_row">
+        <div class="result" style="background-color: #ec1e32;">
+          <p class="result_title">What world needs</p>
+          <p id="a20"></p>
+          <p id="a21"></p>
+          <p id="a22"></p>
+        </div>
+        <div class="result" style="background-color: #3b0ebe;">
+          <p class="result_title">I can be paid for</p>
+          <p id="a30"></p>
+          <p id="a31"></p>
+          <p id="a32"></p>
+        </div>
+      </div>
+    </div>
+    <div class="ikigai_container">
+      <h2>Find the common aspects</h2>
+      <div class="ikigai">
+        <h3>My ikigai is:</h3>
+        <input type="text" />
+      </div>
+    </div>
+    <div class="solutions_container">
+      <h1>Implementing your ikigai</h1>
+      <div class="test_container">
+        <div class="question_box" onclick="expand('5')" style="cursor: pointer;">
+          <h2 class="test_title">Start Small​</h2>
+          <i class="fa fa-chevron-down plus" aria-hidden="true" id="icon5"></i>
+        </div>
+        <div class="hide_container" id="hide5">
+          <p class="test_content" id="c1">
+            You don't have to paint a 5 feet painting, start with something as
+            small as a flower.
+            <br /><br /><br />
+            This is my plan to integrate Ikigai into my day for 10 minutes.
+          </p>
+          <div class="question_container">
+            <div class="question_wrapper">
+              <p class="question">
+                Time:
+              </p>
+              <textarea class="answer"></textarea>
+            </div>
+            <div class="question_wrapper">
+              <p class="question">
+                Place:
+              </p>
+              <textarea class="answer"></textarea>
+            </div>
+            <div class="question_wrapper">
+              <p class="question">
+                What Will I do:
+              </p>
+              <textarea class="answer"></textarea>
             </div>
           </div>
         </div>
-        <div class="test_container">
-          <div
-            class="question_box"
-            onclick="expand('6')"
-            style="cursor: pointer;"
-          >
-            <h2 class="test_title">Accept Yourself</h2>
-            <i
-              class="fa fa-chevron-down plus"
-              aria-hidden="true"
-              id="icon6"
-            ></i>
-          </div>
-          <div class="hide_container" id="hide6">
-            <p class="test_content" id="c1">
-              Don't overestimate or underestimate yourself, Be very Honest while
-              you evaluate your skill and even do not feel embarrassed no matter
-              how naive your work is. Just love it !
-            </p>
-            <div class="question_container">
-              <div class="question_wrapper">
-                <p class="question">
-                  Write down your ikigai and mention that you will be honest and
-                  not be embarrassed or boastful about it.
-                </p>
-                <p class="sample_answer">
-                  Ex - building products for emotional well-being is my IKigai
-                  and I won't feel bad even if it is as bad as this.
-                </p>
-              </div>
+      </div>
+      <div class="test_container">
+        <div class="question_box" onclick="expand('6')" style="cursor: pointer;">
+          <h2 class="test_title">Accept Yourself</h2>
+          <i class="fa fa-chevron-down plus" aria-hidden="true" id="icon6"></i>
+        </div>
+        <div class="hide_container" id="hide6">
+          <p class="test_content" id="c1">
+            Don't overestimate or underestimate yourself, Be very Honest while
+            you evaluate your skill and even do not feel embarrassed no matter
+            how naive your work is. Just love it !
+          </p>
+          <div class="question_container">
+            <div class="question_wrapper">
+              <p class="question">
+                Write down your ikigai and mention that you will be honest and
+                not be embarrassed or boastful about it.
+              </p>
+              <p class="sample_answer">
+                Ex - building products for emotional well-being is my IKigai
+                and I won't feel bad even if it is as bad as this.
+              </p>
             </div>
           </div>
         </div>
-        <div class="test_container">
-          <div
-            class="question_box"
-            onclick="expand('7')"
-            style="cursor: pointer;"
-          >
-            <h2 class="test_title">Harmony</h2>
-            <i
-              class="fa fa-chevron-down plus"
-              aria-hidden="true"
-              id="icon7"
-            ></i>
-          </div>
-          <div class="hide_container" id="hide7">
-            <p class="test_content" id="c1">
-              Understand the effect you can have on society because of Ikigai.
-            </p>
-            <div class="question_container">
-              <div class="question_wrapper">
-                <p class="sample_answer">
-                  Ex - If you love football use it to make new friends so that
-                  you have an active social life or do it as soon as you wake up
-                  so that you will learn to wake up early.
-                </p>
-                <textarea class="answer"></textarea>
-              </div>
+      </div>
+      <div class="test_container">
+        <div class="question_box" onclick="expand('7')" style="cursor: pointer;">
+          <h2 class="test_title">Harmony</h2>
+          <i class="fa fa-chevron-down plus" aria-hidden="true" id="icon7"></i>
+        </div>
+        <div class="hide_container" id="hide7">
+          <p class="test_content" id="c1">
+            Understand the effect you can have on society because of Ikigai.
+          </p>
+          <div class="question_container">
+            <div class="question_wrapper">
+              <p class="sample_answer">
+                Ex - If you love football use it to make new friends so that
+                you have an active social life or do it as soon as you wake up
+                so that you will learn to wake up early.
+              </p>
+              <textarea class="answer"></textarea>
             </div>
           </div>
         </div>
-        <div class="test_container">
-          <div
-            class="question_box"
-            onclick="expand('8')"
-            style="cursor: pointer;"
-          >
-            <h2 class="test_title">The Joy of Little Things​</h2>
-            <i
-              class="fa fa-chevron-down plus"
-              aria-hidden="true"
-              id="icon8"
-            ></i>
-          </div>
-          <div class="hide_container" id="hide8">
-            <p class="test_content" id="c1">
-              Use your Ikigai for bringing positive health.
-            </p>
+      </div>
+      <div class="test_container">
+        <div class="question_box" onclick="expand('8')" style="cursor: pointer;">
+          <h2 class="test_title">The Joy of Little Things​</h2>
+          <i class="fa fa-chevron-down plus" aria-hidden="true" id="icon8"></i>
+        </div>
+        <div class="hide_container" id="hide8">
+          <p class="test_content" id="c1">
+            Use your Ikigai for bringing positive health.
+          </p>
 
-            <div class="question_container">
-              <div class="question_wrapper">
-                <p class="sample_answer">
-                  Ex- If you love football use it to make new friends so that
-                  you have an active social life or do it as soon as you wake up
-                  so that you will learn to wake up early.
-                </p>
-              </div>
+          <div class="question_container">
+            <div class="question_wrapper">
+              <p class="sample_answer">
+                Ex- If you love football use it to make new friends so that
+                you have an active social life or do it as soon as you wake up
+                so that you will learn to wake up early.
+              </p>
             </div>
           </div>
         </div>
-        <div class="test_container">
-          <div
-            class="question_box"
-            onclick="expand('10')"
-            style="cursor: pointer;"
-          >
-            <h2 class="test_title">Be here and Now​</h2>
-            <i
-              class="fa fa-chevron-down plus"
-              aria-hidden="true"
-              id="icon10"
-            ></i>
-          </div>
-          <div class="hide_container" id="hide10">
-            <p class="test_content" id="c1">
-              You have to please no one with your Ikigai, Not even yourself !
-            </p>
+      </div>
+      <div class="test_container">
+        <div class="question_box" onclick="expand('10')" style="cursor: pointer;">
+          <h2 class="test_title">Be here and Now​</h2>
+          <i class="fa fa-chevron-down plus" aria-hidden="true" id="icon10"></i>
+        </div>
+        <div class="hide_container" id="hide10">
+          <p class="test_content" id="c1">
+            You have to please no one with your Ikigai, Not even yourself !
+          </p>
 
-            <div class="question_container">
-              <div class="question_wrapper">
-                <p class="sample_answer">
-                  Ex- play that song even if no one is watching,Draw that
-                  picture, Take a photograph even if no one is watching. No
-                  matter how bad it is and even if it's for a little over 10
-                  minutes.
-                </p>
-              </div>
+          <div class="question_container">
+            <div class="question_wrapper">
+              <p class="sample_answer">
+                Ex- play that song even if no one is watching,Draw that
+                picture, Take a photograph even if no one is watching. No
+                matter how bad it is and even if it's for a little over 10
+                minutes.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-  <link
-    href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
-    rel="stylesheet"
-  />
-  <script src="./resj.js"></script>
-  <script src="./questions.js"></script>
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSejCYgXkSVvujF_6xz9GWuuCYydPdcsqUpAIGp9g48oJvXl6w/viewform?embedded=true"
+      style="width: 100%; margin-top: 20px;" height="1200" frameborder="0" marginheight="0"
+      marginwidth="0">Loading…</iframe>
+  </div>
+</body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+<script src="./resj.js"></script>
+<script src="./questions.js"></script>
+
 </html>
