@@ -713,7 +713,7 @@ a {
     color: white;
     font-weight: 100;
     position: relative;
-    top: 10px;
+    top: 100px;
   }
 
   .text5_new {
@@ -742,11 +742,13 @@ a {
   #sec4 {
     background-color: white;
     margin-top: 0px;
+    position: relative;
+    top: 100px;
     /* padding-bottom: 10vh; */
   }
 
   .image_div {
-    margin-top: 5vh;
+    margin-top: 4vh;
     margin-left: 3vh;
     width: 30vw;
   }
@@ -757,6 +759,7 @@ a {
     width: 30vw;
     font-size: 18px;
     margin-left: 20px;
+    margin-top: -20px;
     text-align: center;
   }
 
@@ -1274,7 +1277,7 @@ a {
     top: 20px;
     margin-left: 10vw;
     margin-right: 13px;
-    width: 55vw;
+    width: 65vw;
     transition: all 0.5s linear 0.3s;
     transform: translateY(100px);
     opacity: 0;

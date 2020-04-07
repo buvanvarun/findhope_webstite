@@ -17,7 +17,7 @@ function onclik() {
         }, 200);
     }
 }
-var txt3 = "Depression doesn't mean sadness";
+var txt3 = "Does depression mean sadness?";
 var k = 0;
 var speed = 50;
 
