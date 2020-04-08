@@ -188,6 +188,61 @@ $(document).ready(function () {
     })
     .setClassToggle("#read_more", "comeup")
     .addTo(controller);
+  var scene28 = new ScrollMagic.Scene({
+      triggerElement: "#container1"
+    })
+    .setClassToggle("#container3_3_0", "comeup")
+    .addTo(controller);
+  var scene29 = new ScrollMagic.Scene({
+      triggerElement: "#container3"
+    })
+    .setClassToggle("#text3_0", "comeup")
+    .addTo(controller);
+  var scene29 = new ScrollMagic.Scene({
+      triggerElement: "#container3"
+    })
+    .setClassToggle("#text3_4_0", "comeup")
+    .addTo(controller);
+  var scene30 = new ScrollMagic.Scene({
+      triggerElement: "#container3"
+    })
+    .setClassToggle("#b4", "comeup")
+    .addTo(controller);
+  var scene31 = new ScrollMagic.Scene({
+      triggerElement: "#container3"
+    })
+    .setClassToggle("#btn2_0", "comeup")
+    .addTo(controller);
+  var scene32 = new ScrollMagic.Scene({
+      triggerElement: "#faq"
+    })
+    .setClassToggle("#faq", "comeup")
+    .addTo(controller);
+  var scene33 = new ScrollMagic.Scene({
+      triggerElement: "#faq"
+    })
+    .setClassToggle("#question1", "comeup")
+    .addTo(controller);
+  var scene34 = new ScrollMagic.Scene({
+      triggerElement: "#faq"
+    })
+    .setClassToggle("#question2", "comeup")
+    .addTo(controller);
+  var scene35 = new ScrollMagic.Scene({
+      triggerElement: "#faq"
+    })
+    .setClassToggle("#question3", "comeup")
+    .addTo(controller);
+  var scene36 = new ScrollMagic.Scene({
+      triggerElement: "#faq"
+    })
+    .setClassToggle("#question4", "comeup")
+    .addTo(controller);
+  var scene37 = new ScrollMagic.Scene({
+      triggerElement: "#faq"
+    })
+    .setClassToggle("#question5", "comeup")
+    .addTo(controller);
 });
 
 var symbols = ["*", "#", "%", "&", "?", "@"];
@@ -246,57 +301,58 @@ function whole_f() {
     }
   }
 }
-setInterval(whole_i, speed);
 
-function whole_i() {
-  var i = 0;
-  var timer_i = setInterval(type_i, 90);
+// setInterval(whole_i, speed);
 
-  function type_i() {
-    if (i < 5) {
-      var sym = symbols[Math.floor(Math.random() * 6)];
-      document.getElementById("i").textContent = sym;
-      i++;
-    } else {
-      clearInterval(timer_i);
-      timer_i = null;
-      document.getElementById("i").textContent = "I";
-    }
-  }
-}
-setInterval(whole_e, speed);
+// function whole_i() {
+//   var i = 0;
+//   var timer_i = setInterval(type_i, 90);
 
-function whole_e() {
-  var i = 0;
-  var timer_e = setInterval(type_e, 90);
+//   function type_i() {
+//     if (i < 5) {
+//       var sym = symbols[Math.floor(Math.random() * 6)];
+//       document.getElementById("i").textContent = sym;
+//       i++;
+//     } else {
+//       clearInterval(timer_i);
+//       timer_i = null;
+//       document.getElementById("i").textContent = "I";
+//     }
+//   }
+// }
+// setInterval(whole_e, speed);
 
-  function type_e() {
-    if (i < 5) {
-      var sym = symbols[Math.floor(Math.random() * 6)];
-      document.getElementById("e").textContent = sym;
-      i++;
-    } else {
-      clearInterval(timer_e);
-      timer_e = null;
-      document.getElementById("e").textContent = "E";
-    }
-  }
-}
-setInterval(whole_a, speed);
+// function whole_e() {
+//   var i = 0;
+//   var timer_e = setInterval(type_e, 90);
 
-function whole_a() {
-  var i = 0;
-  var timer_a = setInterval(type_a, 90);
+//   function type_e() {
+//     if (i < 5) {
+//       var sym = symbols[Math.floor(Math.random() * 6)];
+//       document.getElementById("e").textContent = sym;
+//       i++;
+//     } else {
+//       clearInterval(timer_e);
+//       timer_e = null;
+//       document.getElementById("e").textContent = "E";
+//     }
+//   }
+// }
+// setInterval(whole_a, speed);
 
-  function type_a() {
-    if (i < 5) {
-      var sym = symbols[Math.floor(Math.random() * 6)];
-      document.getElementById("a").textContent = sym;
-      i++;
-    } else {
-      clearInterval(timer_a);
-      timer_a = null;
-      document.getElementById("a").textContent = "A";
-    }
-  }
-}
+// function whole_a() {
+//   var i = 0;
+//   var timer_a = setInterval(type_a, 90);
+
+//   function type_a() {
+//     if (i < 5) {
+//       var sym = symbols[Math.floor(Math.random() * 6)];
+//       document.getElementById("a").textContent = sym;
+//       i++;
+//     } else {
+//       clearInterval(timer_a);
+//       timer_a = null;
+//       document.getElementById("a").textContent = "A";
+//     }
+//   }
+// }
