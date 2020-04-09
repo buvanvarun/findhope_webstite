@@ -243,6 +243,11 @@ $(document).ready(function () {
     })
     .setClassToggle("#question5", "comeup")
     .addTo(controller);
+  var scene37 = new ScrollMagic.Scene({
+      triggerElement: "#faq"
+    })
+    .setClassToggle("#question6", "comeup")
+    .addTo(controller);
 });
 
 var symbols = ["*", "#", "%", "&", "?", "@"];
