@@ -73,10 +73,6 @@
         alert("Name can't be blank");
         return false;
       }
-      // if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
-      //     alert("Please enter your correct name"); //Validation Message
-      //     return false;
-      // }
       return true;
     }
 
@@ -110,8 +106,17 @@
       return true;
     }
 
+    function validateWellnessScore() {
+      var score = document.getElementById("score").value;
+      if (!(score >= 0 && score <= 100)) {
+        alert("The wellness score must be in range 0-100");
+        return false;
+      }
+      return true;
+    }
+
     function validateForm() {
-      if (!validateName() || !validatePhone() || !validateEmail()) {
+      if (!validateName() || !validatePhone() || !validateEmail() || !validateWellnessScore()) {
         alert("Form not submitted"); //Validation Message
         return false;
       } else {
