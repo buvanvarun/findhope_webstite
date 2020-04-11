@@ -105,119 +105,119 @@ function typeWriter3() {
 $(document).ready(function () {
   var controller = new ScrollMagic.Controller();
   var scene1 = new ScrollMagic.Scene({
-      triggerElement: "#t1"
-    })
+    triggerElement: "#t1",
+  })
     .setClassToggle("#box", "boxani")
     .addTo(controller);
   var scene2 = new ScrollMagic.Scene({
-      triggerElement: "#sec1"
-    })
+    triggerElement: "#sec1",
+  })
     .setClassToggle("#wave1", "wave21")
     .addTo(controller);
   var scene3 = new ScrollMagic.Scene({
-      triggerElement: "#sec1"
-    })
+    triggerElement: "#sec1",
+  })
     .setClassToggle("#wave2", "wave21")
     .addTo(controller);
   var scene4 = new ScrollMagic.Scene({
-      triggerElement: "#sec1"
-    })
+    triggerElement: "#sec1",
+  })
     .setClassToggle("#wave3", "wave21")
     .addTo(controller);
   var scene5 = new ScrollMagic.Scene({
-      triggerElement: "#sec1"
-    })
+    triggerElement: "#sec1",
+  })
     .on("start", function () {
       typeWriter2();
     })
     .addTo(controller);
   var scene6 = new ScrollMagic.Scene({
-      triggerElement: "#sec1"
-    })
+    triggerElement: "#sec1",
+  })
     .setClassToggle("#menu1", "bg1")
     .addTo(controller);
   var scene7 = new ScrollMagic.Scene({
-      triggerElement: "#sec1"
-    })
+    triggerElement: "#sec1",
+  })
     .setClassToggle("#menu2", "bg1")
     .addTo(controller);
   var scene8 = new ScrollMagic.Scene({
-      triggerElement: "#sec1"
-    })
+    triggerElement: "#sec1",
+  })
     .setClassToggle("#box2", "boxani")
     .addTo(controller);
   var scene9 = new ScrollMagic.Scene({
-      triggerElement: "#sec1"
-    })
+    triggerElement: "#sec1",
+  })
     .setClassToggle("#head1", "head")
     .addTo(controller);
   var scene10 = new ScrollMagic.Scene({
-      triggerElement: "#sec1"
-    })
+    triggerElement: "#sec1",
+  })
     .setClassToggle("#head2", "head")
     .addTo(controller);
   var scene11 = new ScrollMagic.Scene({
-      triggerElement: "#sec2"
-    })
+    triggerElement: "#sec2",
+  })
     .setClassToggle("#wave1", "wave31")
     .addTo(controller);
   var scene12 = new ScrollMagic.Scene({
-      triggerElement: "#sec2"
-    })
+    triggerElement: "#sec2",
+  })
     .setClassToggle("#wave2", "wave31")
     .addTo(controller);
   var scene13 = new ScrollMagic.Scene({
-      triggerElement: "#sec2"
-    })
+    triggerElement: "#sec2",
+  })
     .setClassToggle("#wave3", "wave31")
     .addTo(controller);
   var scene14 = new ScrollMagic.Scene({
-      triggerElement: "#sec2"
-    })
+    triggerElement: "#sec2",
+  })
     .setClassToggle("#menu1", "bg2")
     .addTo(controller);
   var scene15 = new ScrollMagic.Scene({
-      triggerElement: "#sec2"
-    })
+    triggerElement: "#sec2",
+  })
     .setClassToggle("#menu2", "bg2")
     .addTo(controller);
   var scene16 = new ScrollMagic.Scene({
-      triggerElement: "#sec2"
-    })
+    triggerElement: "#sec2",
+  })
     .on("start", function () {
       typeWriter3();
     })
     .addTo(controller);
   var scene17 = new ScrollMagic.Scene({
-      triggerElement: "#sec2",
-      reverse: false
-    })
+    triggerElement: "#sec2",
+    reverse: false,
+  })
     .setClassToggle("#box3", "boxani")
     .addTo(controller);
   var scene18 = new ScrollMagic.Scene({
-      triggerElement: "#but1",
-      offset: 50,
-      reverse: false
-    })
+    triggerElement: "#but1",
+    offset: 50,
+    reverse: false,
+  })
     .setClassToggle("#img2", "img_ani")
     .addTo(controller);
   var scene19 = new ScrollMagic.Scene({
-      triggerElement: "#but1",
-      offset: 50,
-      reverse: false
-    })
+    triggerElement: "#but1",
+    offset: 50,
+    reverse: false,
+  })
     .setClassToggle("#img3", "img_ani")
     .addTo(controller);
   var scene20 = new ScrollMagic.Scene({
-      triggerElement: "#but1",
-      offset: 50,
-      reverse: false
-    })
+    triggerElement: "#but1",
+    offset: 50,
+    reverse: false,
+  })
     .setClassToggle("#img1", "img_ani")
     .addTo(controller);
   var scene21 = new ScrollMagic.Scene({
-      triggerElement: "#img1"
-    })
+    triggerElement: "#img1",
+  })
     .setClassToggle("#back", "backani")
     .addTo(controller);
 });
@@ -247,12 +247,12 @@ function onclik() {
 }
 
 function myFunction() {
-  myVar = setTimeout(showPage, 1500);
+  myVar = setTimeout(showPage, 500);
 }
 
 function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("loader_div").style.display = "none";
-  document.getElementById('heading').style.display = "flex";
+  document.getElementById("heading").style.display = "flex";
   typeWriter();
 }
