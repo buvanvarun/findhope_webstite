@@ -214,7 +214,7 @@ $(document).ready(function () {
     .setClassToggle("#btn2_0", "comeup")
     .addTo(controller);
   var scene32 = new ScrollMagic.Scene({
-      triggerElement: "#faq"
+      triggerElement: "#btn2_0"
     })
     .setClassToggle("#faq", "comeup")
     .addTo(controller);
@@ -247,6 +247,16 @@ $(document).ready(function () {
       triggerElement: "#faq"
     })
     .setClassToggle("#question6", "comeup")
+    .addTo(controller);
+  var scene38 = new ScrollMagic.Scene({
+      triggerElement: "#container1"
+    })
+    .setClassToggle("#btn1_0", "comeup")
+    .addTo(controller);
+  var scene39 = new ScrollMagic.Scene({
+      triggerElement: "#container3"
+    })
+    .setClassToggle("#btn2_1", "comeup")
     .addTo(controller);
 });
 

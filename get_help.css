@@ -189,6 +189,25 @@ a {
     opacity: 0;
   }
 
+  .btn1_0 {
+    position: relative;
+    margin-top: -40px;
+    margin-left: 170px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #59d859;
+    font-size: 15px;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 190px;
+    height: 40px;
+    transition: all 0.5s linear 0.5s;
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
   .container3_3_0 {
     position: absolute;
     margin-top: 10px;
@@ -789,6 +808,25 @@ a {
     opacity: 0;
   }
 
+  .btn2_1 {
+    position: relative;
+    margin-top: -40px;
+    margin-left: 170px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #59d859;
+    font-size: 15px;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 190px;
+    height: 40px;
+    transition: all 0.5s linear 2.5s;
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
   .faq {
     position: relative;
     top: 145px;
@@ -1275,6 +1313,26 @@ a {
     padding-left: 15px;
     padding-right: 15px;
     width: 240px;
+    height: 65px;
+    cursor: pointer;
+    transition: all 0.5s linear 0.5s;
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  .btn1_0 {
+    position: absolute;
+    margin-top: 570px;
+    margin-left: 27vw;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #59d859;
+    font-size: 35px;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 360px;
     height: 65px;
     cursor: pointer;
     transition: all 0.5s linear 0.5s;
@@ -1900,6 +1958,24 @@ a {
     transform: translateY(100px);
     opacity: 0;
   }
+
+  .btn2_1 {
+    position: absolute;
+    top: 166vh;
+    left: 28vw;
+    border: none;
+    border-radius: 6px;
+    background-color: #59d859;
+    font-size: 30px;
+    color: white;
+    width: 360px;
+    height: 65px;
+    cursor: pointer;
+    transition: all 0.5s linear 2.5s;
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
 
   .faq {
     position: absolute;
