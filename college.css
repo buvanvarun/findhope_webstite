@@ -131,8 +131,17 @@ a {
   margin-left: 10vw;
   z-index: 100;
   margin-top: 40px;
+  animation: fadeIn ease 1s;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #title3 {
   font-size: 70px;
   font-weight: 800;
@@ -184,13 +193,17 @@ a {
 
 #road {
   height: 100%;
-  background: linear-gradient(339deg,
+  background: linear-gradient(
+      339deg,
       rgba(215, 227, 254, 1) 0%,
-      rgba(98, 80, 209, 0.3) 84%),
-    linear-gradient(220deg,
+      rgba(98, 80, 209, 0.3) 84%
+    ),
+    linear-gradient(
+      220deg,
       rgba(255, 237, 114, 1) 2%,
       rgba(241, 59, 123, 1) 45%,
-      rgba(98, 80, 209, 1) 71%) !important;
+      rgba(98, 80, 209, 1) 71%
+    ) !important;
   margin: 3px;
   margin-top: 40px;
 }
@@ -266,7 +279,7 @@ a {
   color: white;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  background-color: rgb(33, 81, 175)
+  background-color: rgb(33, 81, 175);
 }
 
 .icon {
@@ -405,7 +418,7 @@ a {
 .buttonImage {
   width: 90%;
   height: 80px;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -418,7 +431,6 @@ a {
   font-size: 20px;
   border-radius: 12px;
   color: white;
-
 }
 
 .people_link {
@@ -426,7 +438,7 @@ a {
 }
 
 #sec4 {
-  background-color: #64687D;
+  background-color: #64687d;
   margin-top: 0px;
   padding-bottom: 10vh;
   width: 100%;
@@ -479,7 +491,7 @@ a {
 
 .mess {
   font-size: 20px;
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
 }
 
 .message {
@@ -529,9 +541,34 @@ a {
 }
 
 .forms {
-  background-color: #A0C0FF;
+  background-color: #a0c0ff;
 }
 
 .formtitle {
   margin-top: 20px;
+}
+
+.faqs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq {
+  width: 85%;
+  padding: 15px;
+  border-radius: 12px 12px 0px 0px;
+  border-bottom: 1px solid rgb(202, 202, 202);
+  box-shadow: 0px 0px 20px #0000001a;
+  cursor: pointer;
+}
+
+.faqAnswer {
+  width: 85%;
+  font-size: 23px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 0px 0px 20px #0000001a;
+  visibility: hidden;
+  height: 0;
 }
