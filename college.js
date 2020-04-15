@@ -18,42 +18,6 @@ function onclik() {
   }
 }
 
-var i = 0;
-var txt = "National Institute of Technology Agartala";
-var speed = 100;
-
-function addSymbols() {
-  document.getElementById("title").innerHTML = document
-    .getElementById("title")
-    .innerHTML.substr(
-      0,
-      document.getElementById("title").innerHTML.length - 38
-    );
-}
-
-function typeWriter() {
-  var symbols = ["*", "-", "$", "%", "?", "@"];
-  if (i < txt.length) {
-    var sym = symbols[Math.floor(Math.random() * 5)];
-    if (txt.charAt(i) == "Z" || txt.charAt(i) == "Q") {
-      document.getElementById("title").innerHTML +=
-        '<span style="color: #95FFD3;">' + txt.charAt(i) + "</span>" + sym;
-    } else {
-      document.getElementById("title").innerHTML += txt.charAt(i) + sym;
-    }
-
-    document.getElementById("title").innerHTML = document
-      .getElementById("title")
-      .innerHTML.replace(
-        sym,
-        '<span style="color: #95FFD3;">' + sym + "</span>"
-      );
-    i++;
-    setTimeout(addSymbols, speed);
-    setTimeout(typeWriter, speed);
-  }
-}
-
 function pressed(number) {
   if (
     document.getElementById("content" + number).style.visibility == "" ||
@@ -90,4 +54,19 @@ function content(number, r1, r2) {
   document.getElementById("date").innerHTML = date[number];
   document.getElementById("venue").innerHTML = venue[number];
   document.getElementById("info").innerHTML = additional_info[number];
+}
+
+function clicked(number) {
+  if (
+    document.getElementById("faq" + number).style.visibility == "" ||
+    document.getElementById("faq" + number).style.visibility == "hidden"
+  ) {
+    document.getElementById("faq" + number).style.visibility = "visible";
+    document.getElementById("faq" + number).style.padding = "15px";
+    document.getElementById("faq" + number).style.height = "100%";
+  } else {
+    document.getElementById("faq" + number).style.visibility = "hidden";
+    document.getElementById("faq" + number).style.height = "0";
+    document.getElementById("faq" + number).style.padding = "0";
+  }
 }
