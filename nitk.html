@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College</title>
+    <link rel="stylesheet" href="./college.css" />
+</head>
+
+<body onload="typeWriter()">
+    <div class="navbar" id="t1">
+        <div class="heading">
+            <a href="./index.html">
+                <div>
+                    <h1 class="text">FindHope.</h1>
+                </div>
+            </a>
+            <div class="menu__label menu__btn" onclick="onclik()">
+                <i class="fa fa-bars fa-2x btn" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="menu__container" id="menu" style="visibility: hidden;">
+            <span class="menu__title">FindHope</span>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./freecounseling.html">Get Help</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./stories.html">Stories</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./youthadvocates.html">Youth Advocates</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./mentalWellnessTest.html">Take A Test</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bg_layer3 menu_bg_layer" id="menu1"></div>
+        <div class="bg_layer2 menu_bg_layer" id="menu2"></div>
+    </div>
+    <div class="container box1">
+        <p id="title" style="text-align: left; width: 50%; position: absolute; left: 0;">
+            National Institute of Technology kurukshetra
+        </p>
+    </div>
+    <div class="container">
+        <img src="./nitk.jpeg" alt="president" class="president" />
+        <h4 class="president_title">Message from founder</h4>
+        <p class="message">
+            Mental health is highly ignored and neglected, In fact its stigmatised
+            and seen as a negative stereotype. With findhope NITA we want to change
+            this attitude, We want to bring free, accessible and quality mental
+            health care to our campus.
+        </p>
+    </div>
+    <div class="container">
+        <img src="./people.jpg" alt="people" class="peopleImage" />
+        <div class="buttonImage">
+            <a href="https://docs.google.com/document/d/1zAqMVZaYRjI3j-yiM4hzd48K5B7RgQ5Ju4ziAJ-w38I/edit"
+                class="people_link">
+                <button class="peopleButton">Download the brochure</button>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="heading1" style="text-align: center; font-size: 30px;">
+            Transforming the future of<br />
+            mental wellness
+        </h2>
+        <div class="box">
+            <div class="letter">
+                <h1>A</h1>
+            </div>
+            <div class="title2">
+                <h3 class="sub_heading">Awareness</h3>
+                <div class="link" onclick="pressed('1')">
+                    <i class="fa fa-angle-down fa-2x icon" id="icon1" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="content1" id="content1">
+                <p class="para">
+                    Although mental health is a fundamental component of health,
+                    recognition of mental health disorders and its importance is
+                    limited, with Awareness Campaign we promote the symptoms and risk
+                    factors of common mental health struggles. Use our
+                    <a href="./mentalWellnessTest.html" style="color: royalblue;">mental wellness test</a>
+                </p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="letter">
+                <h1>S</h1>
+            </div>
+            <div class="title2">
+                <h3 class="sub_heading">Stigma</h3>
+                <div class="link" onclick="pressed('2')">
+                    <i class="fa fa-angle-down fa-2x icon" id="icon2" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="content1" id="content2">
+                <p class="para">
+                    Stigma associated with mental health can stop people from reaching
+                    out for help, because of the negative stereotypes it imparts on
+                    people. Remember your mental health issue doesn't define you. Find
+                    stories of students who Celebrate their struggles and openly talk
+                    about it at our
+                    <a href="./stories.html" style="color: royalblue;">Stories Section</a>
+                </p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="letter">
+                <h1>L</h1>
+            </div>
+            <div class="title2">
+                <h3 class="sub_heading">Literacy</h3>
+                <div class="link" onclick="pressed('3')">
+                    <i class="fa fa-angle-down fa-2x icon" id="icon3" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="content1" id="content3">
+                <p class="para">
+                    Just like Health Literacy , mental health literacy refers to
+                    recognition, management and prevention of mh disorders by learning
+                    self help techniques and understanding when to seek professional
+                    help.<br /><br />
+                    You can use our
+                    <span><a href="./stories.html" style="color: royalblue;">free tools</a></span>to get scientifically
+                    proven self help techniques
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="road">
+        <h2 class="main_title">Roadmap</h2>
+        <div class="button_box">
+            <button class="path_button" id="button1" onclick="content(0,1,2)">
+                1
+            </button>
+            <button class="path_button" id="button2" onclick="content(1,0,2)">
+                2
+            </button>
+            <button class="path_button" id="button3" onclick="content(2,0,1)">
+                3
+            </button>
+        </div>
+        <div class="content_dialog">
+            <div class="content_title" id="content_title">Awareness Champaign</div>
+            <div class="content_para">
+                <h6 class="content_subtitle">Date:</h6>
+                <p class="content_subpara" id="date">April 1st week</p>
+            </div>
+            <div class="content_para">
+                <h6 class="content_subtitle">Campaign type:</h6>
+                <p class="content_subpara" id="venue">Hyper local model</p>
+            </div>
+            <div class="content_para">
+                <h6 class="content_subtitle">students reached:</h6>
+                <p class="content_subpara" id="info">400</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 style="margin-bottom: 30px;">Colleges in collaboration: 3</h2>
+        <h2 style="margin-bottom: 30px;">Students impacted: 1000</h2>
+    </div>
+    <div class="faqs">
+        <div class="faq" onclick="clicked('1')">
+            What is findhope.in?Why is it doing this program? +
+        </div>
+        <div class="faqAnswer" id="faq1">
+            Findhope is a student centric mental wellness startup ( findhope.in). We
+            provide free peer counselling, free mental wellness tests like
+            depression and anxiety tests. Findhope has started the youth advocate
+            program to bring leaders in mental health from universities across India
+            and equip students with free and authentic resources.
+        </div>
+        <div class="faq" onclick="clicked('2')">
+            What should I do as a youth advocate? +
+        </div>
+        <div class="faqAnswer" id="faq2">
+            <strong>If you are a founder</strong><br /><br />1) Build a team of at
+            least 2 members ( steps & resources will be given in awareness playbook
+            ) <br /><br />
+            2) Coordinate with co-founders to run 3 campaigns by taking resources
+            from playbook and sharing it via social media.<br /><br />
+            <strong>If you are a co-founder</strong><br /><br />1) Coordinate with
+            co-founders to run 3 campaigns by taking resources from playbook and
+            sharing it via social media and take an emotional first aid course worth
+            99.
+        </div>
+        <div class="faq" onclick="clicked('3')">
+            How much time should a youth advocate spend ? +
+        </div>
+        <div class="faqAnswer" id="faq3">
+            We have stitched the program to leverage impact with minimum time,
+            typically a Y.A will spend 3 hours for successful completion of the
+            program.
+        </div>
+        <div class="faq" onclick="clicked('4')">
+            What are campaigns ? How will it help others? +
+        </div>
+        <div class="faqAnswer" id="faq4">
+            A youth advocate either a co-founder or founder will run 3 digital
+            campaigns to promote and equip fellow students with enough knowledge and
+            free resources to tackle common mental health struggles.<br /><br />
+            <strong>1) Awareness Campaign</strong>- We face a lot of mental health
+            struggles for the very first time in our lives, but very few of us
+            recognise it and take action, through this campaign we focus on
+            recognising common mental health struggles. ( 1 hour of work)
+            <br /><br />
+
+            <strong>2) Literacy Campaign</strong>- Recognising or just being aware
+            that we have encountered a mental health problem is just the first step
+            towards a solution, Through Literacy campaign we focus on promoting
+            self-help techniques & free resources to tackle them. ( 1 hour of work)
+            <br /><br />
+            <strong>3) Stigma Campaign</strong> - Not many can openly talk about
+            their mental health problems, many still consider mental health problems
+            as a shameful integrity or an intrinsic defect in a person or any other
+            negative stereotype. Reality is just the opposite of these negative
+            attributes and these stop people from reaching out and getting help.
+            Stigma campaign aims in changing these behaviours.( 1 hour of work)
+        </div>
+        <div class="faq" onclick="clicked('5')">
+            What is an Emotional First Aid course?<br />
+            Is it compulsory for the Youth Advocate Program?+
+        </div>
+        <div class="faqAnswer" id="faq5">
+            Emotional first aid akin to physical first aid is a self help strategy
+            deployed to stop damage from an emotional wound like loneliness,
+            rejection, failure, low self esteem etc. Yes, It is compulsory for every
+            Youth Advocate to take up the course, it helps them treat themselves and
+            their peers, It costs 99 rs and is a part of the Literacy Campaign.
+        </div>
+        <div class="faq" onclick="clicked('6')">
+            What are the Incentives for Youth Advocates? +
+        </div>
+        <div class="faqAnswer" id="faq6">
+            -Become a certified changemaker<br /><br />
+            -Work reference for a career opportunity ( LOR, SOP , References etc for
+            abroad studies/placements)<br /><br />
+            -Transform into a entrepreneur leader <br /><br />
+            -Launch disruptive Products that bring social change <br /><br />
+            - A personal University website as a digital portfolio<br /><br />
+        </div>
+        <div class="faq" onclick="clicked('7')" style="border: none; border-radius: 12px;">
+            Why did we start a mental health startup ? +
+        </div>
+        <div class="faqAnswer" id="faq7" style="margin-bottom: 50px;">
+            India looses one student every hour to suicide and more than 20% of
+            indian students are affected by some level of mental health disorder,
+            but how many can actually recognise their problems ? and how many have
+            the resources to treat them ?. W.H.O says that 90 % of the youth never
+            take treatment for their mental health issue. We want to decrease this
+            treatment gap ,so we have built free counselling services, free tests
+            and most importantly a community of young leaders who are forging teams
+            and educating their campuses on mental health awareness, literacy and
+            stigma.
+        </div>
+    </div>
+    <div id="sec4">
+        <div>
+            <img src="./hope6.png" alt="FindHope" class="image_div" style="widows: 100px;" />
+        </div>
+        <div class="message">
+            <span class="mess"> With</span>
+            <span style="color: red;">
+                <img src="./heart.png" alt="" class="heart" />
+            </span>
+            <span class="mess">
+                from NIT Agartala
+            </span>
+        </div>
+        <div class="social">
+            <div class="soc_title">
+                <p style="color: rgb(178, 204, 255);">Social</p>
+            </div>
+            <div class="soc">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <p class="social_text">
+                    <a href="https://www.linkedin.com/in/findhope-851156193/">linkedin</a>
+                </p>
+            </div>
+            <div class="soc">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <p class="social_text">
+                    <a href="https://www.instagram.com/findhope.in/" target="__blank">Instagram</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+<script src="./college.js"></script>
+
+</html>
