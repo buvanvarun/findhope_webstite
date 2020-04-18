@@ -78,4 +78,38 @@ $(document).ready(function () {
         })
         .setClassToggle('#button1', 'but_ani')
         .addTo(controller);
+    var scene5 = new ScrollMagic.Scene({
+            triggerElement: '#t1'
+        })
+        .setClassToggle('#gbtn', 'but_ani')
+        .addTo(controller);
 });
+
+const button1 = document.getElementById('button1');
+
+
+
+function onSignIn(googleUser) {
+    button1.style.backgroundColor = "#70db70";
+    button1.disabled = false;
+    var profile = googleUser.getBasicProfile();
+    $.ajax({
+        url: "https://docs.google.com/forms/u/5/d/e/1FAIpQLSdaUun4-lKr9hkPmjtLQsbl24SPO3-Gh5OS8_JzokqGH8eERA/formResponse",
+        data: {
+            "entry.1758988128": profile.getName(),
+            "entry.1916594965": profile.getEmail(),
+        },
+        type: "POST",
+        dataType: "xml"
+    });
+}
+
+function signOut() {
+    // if (signin) {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+        console.log("User signed out.");
+    });
+    // signin = "false";
+    // }
+}
