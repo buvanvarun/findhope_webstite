@@ -27,7 +27,7 @@
         content="355243087266-ejcdhnmpjthed1jli8dtv2grq3gtoua7.apps.googleusercontent.com" />
 </head>
 
-<body>
+<body onload="startApp()">
     <div class="navbar" id="t1">
         <div class="heading" id="heading">
             <a href="./index.html">
@@ -71,13 +71,12 @@
             Research at <span class="head">National Center for Biotechnology Information</span>(NCBI) is part of the
             United States National
             Library of Medicine (NLM), a branch of the National Institutes of Health (NIH).</p>
-        <div id="gbtn" class="g-signin2 gbtn" data-onsuccess="onSignIn"></div>
-        <a id="abtn" href="./anxietytest.html" onclick="signOut()" class="button">
-            <button disabled="disabled" class="button1" id="button1"
-                style="background-color: grey; font-family: 'Circular';">
-                Begin The Test
-            </button>
-        </a>
+        <div id="gSignInWrapper">
+            <div id="customBtn" class="customGPlusSignIn">
+                <span class="icon"></span>
+                <span class="buttonText">Sign in with Google to continue</span>
+            </div>
+        </div>
     </div>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
