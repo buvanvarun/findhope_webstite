@@ -17,7 +17,7 @@ function onclik() {
     }, 200);
   }
 }
-var txt3 = "Anxiety doesn't mean Nervousness";
+var txt3 = "Stressed about stress ?";
 var k = 0;
 var speed = 50;
 
@@ -34,7 +34,7 @@ function typeWriter3() {
   var symbols = ["*", "-", "$", "%", "?", "@"];
   if (k < txt3.length) {
     var sym = symbols[Math.floor(Math.random() * 5)];
-    if (txt3.charAt(k) == "x" || (txt3.charAt(k) == "a" && k > 3)) {
+    if (txt3.charAt(k) == "x" || (txt3.charAt(k) == "b" && k > 3)) {
       document.getElementById("title3").innerHTML +=
         '<span style="color: #70db70;">' + txt3.charAt(k) + "</span>" + sym;
     } else {
