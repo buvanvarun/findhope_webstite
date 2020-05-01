@@ -68,7 +68,7 @@ function typeWriter2() {
   }
 }
 
-var txt3 = "Youth Advocates";
+var txt3 = "Digital Student Clubs";
 var k = 0;
 
 function addSymbols3() {
@@ -84,7 +84,7 @@ function typeWriter3() {
   var symbols = ["*", "-", "$", "%", "?", "@"];
   if (k < txt3.length) {
     var sym = symbols[Math.floor(Math.random() * 5)];
-    if (txt3.charAt(k) == "u" || txt3.charAt(k) == "e") {
+    if (txt3.charAt(k) == "g" || txt3.charAt(k) == "b") {
       document.getElementById("title3").innerHTML +=
         '<span style="color: #eb4034;">' + txt3.charAt(k) + "</span>" + sym;
     } else {
