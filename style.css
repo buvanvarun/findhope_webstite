@@ -436,7 +436,6 @@ a {
     font-size: 100px;
     font-weight: 800;
     width: 200px;
-    height: 350px;
     font-family: "Circular";
     letter-spacing: 1px;
     margin-left: 10vw;
@@ -886,7 +885,7 @@ a {
   }
 
   .wave21 {
-    fill: #a0c0ff;
+    fill: #a0c0ff !important;
   }
 
   .sec {
@@ -931,7 +930,6 @@ a {
   }
 
   #sec1 {
-    height: 170vh;
     z-index: 0;
   }
 
@@ -954,7 +952,6 @@ a {
     font-size: 50px;
     font-weight: 800;
     width: 200px;
-    height: 100px;
     font-family: "Circular";
     letter-spacing: 1px;
     margin-left: 30px;
