@@ -80,7 +80,7 @@ $(document).ready(function () {
   var scene5 = new ScrollMagic.Scene({
     triggerElement: "#t1",
   })
-    .setClassToggle("#gbtn", "but_ani")
+    .setClassToggle("#customBtn", "but_ani")
     .addTo(controller);
 });
 
@@ -103,10 +103,10 @@ function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
   $.ajax({
     url:
-      "https://docs.google.com/forms/u/5/d/e/1FAIpQLSfU0HVYIb9Tw1fCb2YPwSbM5_PJqq5N3mCL4VXf99J4tt0Daw/formResponse",
+      "https://docs.google.com/forms/u/1/d/e/1FAIpQLScFCedzWi5UfDtvloVWQKi59_0t4A0eQV8dQqjD6oyW7xOMYg/formResponse",
     data: {
-      "entry.28725096": profile.getName(),
-      "entry.1092948244": profile.getEmail(),
+      "entry.457685019": profile.getName(),
+      "entry.1693599908": profile.getEmail(),
     },
     type: "POST",
     dataType: "xml",
@@ -147,10 +147,10 @@ function attachSignin(element) {
       var profile = googleUser.getBasicProfile();
       $.ajax({
         url:
-          "https://docs.google.com/forms/u/5/d/e/1FAIpQLSdaUun4-lKr9hkPmjtLQsbl24SPO3-Gh5OS8_JzokqGH8eERA/formResponse",
+          "https://docs.google.com/forms/u/1/d/e/1FAIpQLScFCedzWi5UfDtvloVWQKi59_0t4A0eQV8dQqjD6oyW7xOMYg/formResponse",
         data: {
-          "entry.1758988128": profile.getName(),
-          "entry.1916594965": profile.getEmail(),
+          "entry.457685019": profile.getName(),
+          "entry.1693599908": profile.getEmail(),
         },
         type: "POST",
         dataType: "xml",
