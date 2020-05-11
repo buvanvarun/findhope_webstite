@@ -80,7 +80,7 @@ $(document).ready(function () {
   var scene5 = new ScrollMagic.Scene({
     triggerElement: "#t1",
   })
-    .setClassToggle("#gbtn", "but_ani")
+    .setClassToggle("#customBtn", "but_ani")
     .addTo(controller);
 });
 
