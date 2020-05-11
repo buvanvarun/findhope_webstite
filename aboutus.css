@@ -10,9 +10,20 @@
   margin: 0;
   font-family: "Circular";
 }
+
 .text {
   margin-left: 30px;
 }
+
+.profiles {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+
 .navbar {
   position: fixed;
   top: 0%;
@@ -162,10 +173,12 @@ a {
     color: #9adaff;
     text-align: center;
   }
+
   .content_container {
     padding: 10px;
     width: 90vw;
   }
+
   .content {
     text-align: center;
     line-height: 1.3rem;
@@ -226,10 +239,12 @@ a {
   .wrapper {
     display: flex;
   }
+
   .content_container {
     padding: 10px;
     margin-top: 1vh;
   }
+
   .content {
     text-align: center;
     line-height: 1.3rem;
