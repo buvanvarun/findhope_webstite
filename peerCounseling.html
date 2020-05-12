@@ -48,7 +48,8 @@
         action="https://docs.google.com/forms/u/5/d/e/1FAIpQLScLp0GxKSMF9I9b2rhlU-BCBmGAm9QVfcsiBA-fChOk19N5_w/formResponse"
         method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
         <div class="w3-section">
-          <label>Name</label>
+          <label>Name</label> <br>
+          <label>(Provide nickname if you wish to be anonymous)</label>
           <input class="w3-input w3-border" type="text" placeholder="Name" id="name" required name="entry.455918560" />
         </div>
         <div class="w3-section">
@@ -57,16 +58,17 @@
             name="entry.2020669080" />
         </div>
         <div class="w3-section">
-          <label>Whatsapp Number</label>
+          <label>Whatsapp Number</label> <br>
+          <label>(Therapy is done over whatsapp and your number is perfectly safe)</label>
           <input class="w3-input w3-border" f type="text" placeholder="Phone" id="phone" required
             name="entry.1690252233" />
         </div>
-        <div class="w3-section">
+        <!-- <div class="w3-section">
           <label>Wellness Score</label>
           <a href="./mentalWellnessTest.html" style="text-decoration: none; color: #007991;">(check your score)</a>
           <input class="w3-input w3-border" type="text" placeholder="Wellness Score" id="score" required
             name="entry.2130726129" />
-        </div>
+        </div> -->
         <div class="w3-section">
           <label>Preferred Language</label>
           <p>
@@ -133,17 +135,17 @@
       return true;
     }
 
-    function validateWellnessScore() {
-      var score = document.getElementById("score").value;
-      if (!(score >= 0 && score <= 100)) {
-        alert("The wellness score must be in range 0-100");
-        return false;
-      }
-      return true;
-    }
+    // function validateWellnessScore() {
+    //   var score = document.getElementById("score").value;
+    //   if (!(score >= 0 && score <= 100)) {
+    //     alert("The wellness score must be in range 0-100");
+    //     return false;
+    //   }
+    //   return true;
+    // }
 
     function validateForm() {
-      if (!validateName() || !validatePhone() || !validateEmail() || !validateWellnessScore()) {
+      if (!validateName() || !validatePhone() || !validateEmail()) {
         alert("Form not submitted"); //Validation Message
         return false;
       } else {
