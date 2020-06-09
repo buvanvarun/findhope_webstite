@@ -121,7 +121,8 @@
     }
 
     function validateEmail() {
-      var email = document.getElementById("email").value;
+      var mail = document.getElementById("email").value;
+      var email=mail.toLowerCase();
       if (email.length == 0) {
         alert("Email can't be blank"); //Validation Message
         return false;
