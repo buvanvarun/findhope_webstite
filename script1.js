@@ -7,7 +7,7 @@ var problems = [
   "Failure",
   "Focus",
   "Restlessness",
-  "Hurting yourself"
+  "Hurting yourself",
 ];
 var solutions = [
   "<h1>Tips to overcome lack of interest</h1><br><br><h2>Passion</h2><br>You will more easily feel passion for something in the short-term if the end-goal is meaningful for you in the long-term (i.e. if you can envision a better future).<br><br><h2>Sleep</h2><br>Sleep works to reduce depression and anhedonia by reducing fatigue, improving cognitive function, and increasing motivation.<br><br><h2><br>Mindfulness</h2>Stop seeking pleasure all the time. Constant exposure to pleasurable stimuli will remove any sense of novelty in your life.",
@@ -18,7 +18,7 @@ var solutions = [
   "<h1>Tips to overcome failure</h1><br><br><h2>First, just accept how you feel</h2><br>When you’ve just failed it will most likely hurt. Sometimes a bit. Sometimes a lot.Don’t try to push it away by distracting yourself or by trying to push the responsibility onto the rest of the world (if you deep down know that this one’s on you partly or fully).<br><h2>Remember: you’re not a failure just because you had a setback.</h2><br>When you’ve had a setback it’s very easy to start thinking that you will always keep failing in this area of your life. It’s easy to start thinking that YOU are indeed a failure.<br><h2>Be constructive and learn from this situation.</h2><br>See it more as valuable feedback and something you can use to improve rather than only a big blow and setback.",
   "<h1>Tips to improve your focus</h1><br><br><h2>Know What influences Your Focus</h2><br>Your focus is dependent on physical and mental factors. Some are good for your focus, others are not.<br>The most obvious is sleep; if you don’t sleep sufficient your focus and judgment suffers. Also, exercise and the types of food we eat, significantly impacts your ability to stay focused<br>More surprisingly, coffee, contrary to what many of us believe, is not useful for your focus. The caffeine suppresses your drowsiness, but scatters your focus. Needless to say, alcohol is bad for your focus, too.<br>",
   "<h1>Tips to overcome restlessness</h1><br><br><h2>Follow Your Bliss So You’re Doing What You Enjoy</h2><br>Grab hold of a powerful insight from the late mythologist Joseph Campbell who often suggested to his students that they “follow their bliss.”<br><h2>Explore Your Dreams to Connect with the Unconscious</h2><br>Freud saw dreams as merely a rehashing of events from prior days and memories from childhood. Jung discovered an extraordinary third source of dream content: the wisdom of the two-million-year-old human being, the “age-old unforgotten wisdom stored up in us.”<br><h2>Clarify Your Values to Align Yourself</h2><br>Values are another powerful tool we often discuss here that can help remedy restlessness.When you’re living in discord with your values, you’re going to feel restlessness. For example, if you’re selling yourself out in some way, you’re going to be fidgety.",
-  "<h1>How to overcome thoughts of hurting yourself</h1><br><br><h2>Reach Out </h2><br>If you are having persistent thoughts about death and dying, reach out to someone in your life who is trustworthy and compassionate. If you don't have someone in your family or group of friends that you can talk to, look to others in your community, such as clergy, counselors, and health care providers.<br><h2>Avoid Impulsive Action</h2><br>If you are having thoughts of suicide or feeling that you wish you were dead, avoid making any impulsive decisions or taking drastic actions. While the feelings you are having may be intense and distressing, try to remember that they will pass. If you feel that you are not in control of your life at the moment and that things will never get better, keep in mind that feelings and emotions do not last forever and can change."
+  "<h1>How to overcome thoughts of hurting yourself</h1><br><br><h2>Reach Out </h2><br>If you are having persistent thoughts about death and dying, reach out to someone in your life who is trustworthy and compassionate. If you don't have someone in your family or group of friends that you can talk to, look to others in your community, such as clergy, counselors, and health care providers.<br><h2>Avoid Impulsive Action</h2><br>If you are having thoughts of suicide or feeling that you wish you were dead, avoid making any impulsive decisions or taking drastic actions. While the feelings you are having may be intense and distressing, try to remember that they will pass. If you feel that you are not in control of your life at the moment and that things will never get better, keep in mind that feelings and emotions do not last forever and can change.",
 ];
 var reason = [];
 (function () {
@@ -31,7 +31,7 @@ var reason = [];
     'Feeling bad about yourself or that you are a <span style="color: #70db70;">failure</span> or have let yourself or your family down in the past two weeks',
     'Trouble <span style="color: #70db70;">concentrating</span> on things, such as studying or watching movies in the past two weeks',
     'Moving or speaking so slowly or behaving <span style="color: #70db70;">restlessly</span>than usual in the past two weeks',
-    'Thoughts that you would be better off dead,or of <span style="color: #70db70;">hurting</span> yourself in the past two weeks'
+    'Thoughts that you would be better off dead,or of <span style="color: #70db70;">hurting</span> yourself in the past two weeks',
   ];
 
   var ch = 0;
@@ -124,8 +124,8 @@ function displayResult(s, reasons) {
 $(document).ready(function () {
   var controller = new ScrollMagic.Controller();
   var scene0 = new ScrollMagic.Scene({
-      triggerElement: "#container2"
-    })
+    triggerElement: "#container2",
+  })
     .setClassToggle("#o1", "comeup")
     .addTo(controller);
 });
