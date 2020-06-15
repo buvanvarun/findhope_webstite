@@ -74,6 +74,14 @@
     }
     displayQuestions();
   };
+  o5.onclick = function () {
+    reasons[ch] = 4;
+    depressionCount += 4;
+    if (ch === 3 && ch === 4 && ch === 6 && ch === 7) {
+      reversAnswer(0);
+    }
+    displayQuestions();
+  };
 })();
 
 function displayResult(s, reasons) {
